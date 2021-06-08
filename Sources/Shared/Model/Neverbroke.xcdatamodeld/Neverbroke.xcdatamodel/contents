@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20E241" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="AllowanceAmount" representedClassName="AllowanceAmount" syncable="YES" codeGenerationType="class">
+        <attribute name="amount_" attributeType="Integer 32" minValueString="0" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="day_" attributeType="Date" defaultDateTimeInterval="631152000" usesScalarValueType="NO"/>
+        <attribute name="timestamp_" attributeType="Date" defaultDateTimeInterval="631152000" usesScalarValueType="NO"/>
+        <fetchIndex name="byTimestampIndex">
+            <fetchIndexElement property="timestamp_" type="Binary" order="descending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="ExpenseItem" representedClassName="ExpenseItem" syncable="YES" codeGenerationType="class">
+        <attribute name="amount_" attributeType="Integer 32" minValueString="0" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="category_" optional="YES" attributeType="String"/>
+        <attribute name="day_" attributeType="Date" defaultDateTimeInterval="631152000" usesScalarValueType="NO"/>
+        <attribute name="emoji_" optional="YES" attributeType="String"/>
+        <attribute name="memo_" optional="YES" attributeType="String"/>
+        <attribute name="timestamp_" attributeType="Date" defaultDateTimeInterval="631152000" usesScalarValueType="NO"/>
+        <attribute name="timezoneId_" attributeType="String" defaultValueString="GMT"/>
+        <attribute name="timezoneSeconds_" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <fetchIndex name="byTimestampIndex">
+            <fetchIndexElement property="timestamp_" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <elements>
+        <element name="ExpenseItem" positionX="-63" positionY="-18" width="128" height="149"/>
+        <element name="AllowanceAmount" positionX="-63" positionY="45" width="128" height="74"/>
+    </elements>
+</model>

@@ -1,0 +1,1948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D061F3D26679B1D009355F2 /* SpentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F3C26679B1D009355F2 /* SpentButton.swift */; };
+		9D061F3F26679C58009355F2 /* CurrencyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F3E26679C58009355F2 /* CurrencyButton.swift */; };
+		9D061F4026679D29009355F2 /* ExpenseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B1E52656B922005F5A06 /* ExpenseList.swift */; };
+		9D061F4126679D39009355F2 /* ExpenseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2162656D9BB005F5A06 /* ExpenseDetails.swift */; };
+		9D061F4226679D54009355F2 /* RemoveExpenseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A08D265C02B0009C1261 /* RemoveExpenseButton.swift */; };
+		9D061F4326679D5B009355F2 /* NewExpenseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74991E2652D7B000D5A66F /* NewExpenseButton.swift */; };
+		9D061F4426679D67009355F2 /* ExpenseForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74991B2652D08700D5A66F /* ExpenseForm.swift */; };
+		9D061F46266817F0009355F2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
+		9D061F47266817F0009355F2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
+		9D061F48266817F0009355F2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
+		9D061F49266817F0009355F2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
+		9D061F4A266817F0009355F2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
+		9D52B1E62656B953005F5A06 /* ExpenseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B1E52656B922005F5A06 /* ExpenseList.swift */; };
+		9D52B1E72656B954005F5A06 /* ExpenseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B1E52656B922005F5A06 /* ExpenseList.swift */; };
+		9D52B2172656D9BB005F5A06 /* ExpenseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2162656D9BB005F5A06 /* ExpenseDetails.swift */; };
+		9D52B2182656D9BB005F5A06 /* ExpenseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2162656D9BB005F5A06 /* ExpenseDetails.swift */; };
+		9D52B21A2656DAD2005F5A06 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2192656DACA005F5A06 /* Formatter.swift */; };
+		9D52B21B2656DAD6005F5A06 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2192656DACA005F5A06 /* Formatter.swift */; };
+		9D52B223265818D5005F5A06 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D52B222265818D5005F5A06 /* WidgetKit.framework */; };
+		9D52B225265818D5005F5A06 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D52B224265818D5005F5A06 /* SwiftUI.framework */; };
+		9D52B228265818D5005F5A06 /* AllowanceWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B227265818D5005F5A06 /* AllowanceWidget.swift */; };
+		9D52B22B265818D6005F5A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D52B22A265818D6005F5A06 /* Assets.xcassets */; };
+		9D52B22D265818D6005F5A06 /* AllowanceWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B229265818D5005F5A06 /* AllowanceWidget.intentdefinition */; };
+		9D52B231265818D6005F5A06 /* Widget (iOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D52B220265818D5005F5A06 /* Widget (iOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D52B23826581BF2005F5A06 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F8264DA19400D5A66F /* UserPreferences.swift */; };
+		9D52B23B265823CB005F5A06 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
+		9D52B23C265823D1005F5A06 /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
+		9D52B23D26582AF2005F5A06 /* Double+formattedAsAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499122652B0C600D5A66F /* Double+formattedAsAmount.swift */; };
+		9D52B23E26582AF6005F5A06 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2192656DACA005F5A06 /* Formatter.swift */; };
+		9D52B23F26582AF9005F5A06 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
+		9D64A076265BC456009C1261 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A053265BBE2E009C1261 /* Intents.framework */; };
+		9D64A079265BC456009C1261 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A078265BC456009C1261 /* IntentHandler.swift */; };
+		9D64A07D265BC456009C1261 /* Intents (iOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D64A075265BC456009C1261 /* Intents (iOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D64A083265BF98D009C1261 /* AllowanceIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */; };
+		9D64A084265BFC44009C1261 /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
+		9D64A085265BFC4C009C1261 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
+		9D64A087265BFC4C009C1261 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F8264DA19400D5A66F /* UserPreferences.swift */; };
+		9D64A089265BFCB3009C1261 /* Double+formattedAsAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499122652B0C600D5A66F /* Double+formattedAsAmount.swift */; };
+		9D64A08A265BFCB3009C1261 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2192656DACA005F5A06 /* Formatter.swift */; };
+		9D64A08B265BFCB3009C1261 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
+		9D64A08E265C02B3009C1261 /* RemoveExpenseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A08D265C02B0009C1261 /* RemoveExpenseButton.swift */; };
+		9D64A08F265C02B6009C1261 /* RemoveExpenseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A08D265C02B0009C1261 /* RemoveExpenseButton.swift */; };
+		9D64A092265E67A3009C1261 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A091265E67A3009C1261 /* CloudKit.framework */; };
+		9D64A094265E84E8009C1261 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D64A093265E8490009C1261 /* Settings.bundle */; };
+		9D64A095265E897A009C1261 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A091265E67A3009C1261 /* CloudKit.framework */; };
+		9D64A096265E8986009C1261 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A091265E67A3009C1261 /* CloudKit.framework */; };
+		9D64A098265E8B70009C1261 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A097265E8B70009C1261 /* CloudKit.framework */; };
+		9D64A0BA265E9E0A009C1261 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
+		9D64A0BB265E9E0A009C1261 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
+		9D64A0BE265EA2F8009C1261 /* Neverbroke.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0BC265EA2F8009C1261 /* Neverbroke.xcdatamodeld */; };
+		9D64A0BF265EA2F8009C1261 /* Neverbroke.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0BC265EA2F8009C1261 /* Neverbroke.xcdatamodeld */; };
+		9D64A0C0265EA2F8009C1261 /* Neverbroke.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0BC265EA2F8009C1261 /* Neverbroke.xcdatamodeld */; };
+		9D64A0C1265EA2F8009C1261 /* Neverbroke.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0BC265EA2F8009C1261 /* Neverbroke.xcdatamodeld */; };
+		9D64A0C6265EBF2D009C1261 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0C5265EBF29009C1261 /* ContentView.swift */; };
+		9D64A0C8265FB11A009C1261 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0C7265FB0DB009C1261 /* ExpenseItem.swift */; };
+		9D64A0C9265FB11B009C1261 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0C7265FB0DB009C1261 /* ExpenseItem.swift */; };
+		9D64A0CA265FB11C009C1261 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0C7265FB0DB009C1261 /* ExpenseItem.swift */; };
+		9D64A0CB265FB11C009C1261 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0C7265FB0DB009C1261 /* ExpenseItem.swift */; };
+		9D64A0CD265FB8BC009C1261 /* RemainingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0CC265FB7F2009C1261 /* RemainingBox.swift */; };
+		9D64A0CE265FB8BC009C1261 /* RemainingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0CC265FB7F2009C1261 /* RemainingBox.swift */; };
+		9D64A0CF265FFE37009C1261 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
+		9D64A0D0265FFE37009C1261 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
+		9D64A0DC266013C2009C1261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D64A0DB266013C2009C1261 /* Assets.xcassets */; };
+		9D64A0E3266013C3009C1261 /* WatchKit (watchOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D64A0E2266013C3009C1261 /* WatchKit (watchOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D64A0E8266013C3009C1261 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0E7266013C3009C1261 /* ContentView.swift */; };
+		9D64A0EA266013C3009C1261 /* NeverbrokeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0E9266013C3009C1261 /* NeverbrokeApp.swift */; };
+		9D64A0EE266013C4009C1261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D64A0ED266013C4009C1261 /* Assets.xcassets */; };
+		9D64A10126601631009C1261 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A10026601631009C1261 /* CloudKit.framework */; };
+		9D64A10226601EF4009C1261 /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
+		9D64A10326601F09009C1261 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
+		9D64A10426601F1B009C1261 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0C7265FB0DB009C1261 /* ExpenseItem.swift */; };
+		9D64A10526601F1B009C1261 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
+		9D64A10726601F1B009C1261 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F8264DA19400D5A66F /* UserPreferences.swift */; };
+		9D64A10926601F1F009C1261 /* Neverbroke.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0BC265EA2F8009C1261 /* Neverbroke.xcdatamodeld */; };
+		9D64A10B26602008009C1261 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2192656DACA005F5A06 /* Formatter.swift */; };
+		9D64A10C26602008009C1261 /* Double+formattedAsAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499122652B0C600D5A66F /* Double+formattedAsAmount.swift */; };
+		9D64A10D26602008009C1261 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
+		9D6B43AA2665351900D89443 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43A82665351900D89443 /* Intents.intentdefinition */; };
+		9D6B43AC266544D700D89443 /* CurrencyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43AB266544D700D89443 /* CurrencyForm.swift */; };
+		9D6B43B026668B2F00D89443 /* AllowanceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43AD26668B2F00D89443 /* AllowanceButton.swift */; };
+		9D6B43B22666AA7200D89443 /* Double+inCents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43B12666AA1900D89443 /* Double+inCents.swift */; };
+		9D6B43B32666AA7300D89443 /* Double+inCents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43B12666AA1900D89443 /* Double+inCents.swift */; };
+		9D6B43B42666AA7400D89443 /* Double+inCents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43B12666AA1900D89443 /* Double+inCents.swift */; };
+		9D6B43B52666AA7500D89443 /* Double+inCents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43B12666AA1900D89443 /* Double+inCents.swift */; };
+		9D6B43B62666AA7A00D89443 /* Double+inCents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43B12666AA1900D89443 /* Double+inCents.swift */; };
+		9D6B43B82666ADDE00D89443 /* AmountStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43B72666ADDE00D89443 /* AmountStepper.swift */; };
+		9D6B43BA2666AFE500D89443 /* RemainingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43B92666AFE500D89443 /* RemainingButton.swift */; };
+		9D6B43BC266782B000D89443 /* WelcomeMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43BB266782B000D89443 /* WelcomeMessage.swift */; };
+		9D7498E1264D7C5700D5A66F /* NeverbrokeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498CE264D7C5400D5A66F /* NeverbrokeApp.swift */; };
+		9D7498E2264D7C5700D5A66F /* NeverbrokeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498CE264D7C5400D5A66F /* NeverbrokeApp.swift */; };
+		9D7498E3264D7C5700D5A66F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498CF264D7C5400D5A66F /* ContentView.swift */; };
+		9D7498E5264D7C5700D5A66F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7498D0264D7C5600D5A66F /* Assets.xcassets */; };
+		9D7498E6264D7C5700D5A66F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7498D0264D7C5600D5A66F /* Assets.xcassets */; };
+		9D7498F0264D9D1F00D5A66F /* UserPreferencesForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498EF264D9D1F00D5A66F /* UserPreferencesForm.swift */; };
+		9D7498F1264D9D1F00D5A66F /* UserPreferencesForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498EF264D9D1F00D5A66F /* UserPreferencesForm.swift */; };
+		9D7498F3264D9D9600D5A66F /* UserPreferencesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F2264D9D9600D5A66F /* UserPreferencesButton.swift */; };
+		9D7498F4264D9D9600D5A66F /* UserPreferencesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F2264D9D9600D5A66F /* UserPreferencesButton.swift */; };
+		9D7498F9264DA19400D5A66F /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F8264DA19400D5A66F /* UserPreferences.swift */; };
+		9D7498FA264DA19400D5A66F /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F8264DA19400D5A66F /* UserPreferences.swift */; };
+		9D7498FC264DA33300D5A66F /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
+		9D7498FD264DA33300D5A66F /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
+		9D749903264EB8B100D5A66F /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
+		9D749904264EB8B100D5A66F /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
+		9D74990A264EC30D00D5A66F /* AllowanceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749908264EC0A500D5A66F /* AllowanceForm.swift */; };
+		9D74990B264EC30E00D5A66F /* AllowanceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749908264EC0A500D5A66F /* AllowanceForm.swift */; };
+		9D74990D264EC3F600D5A66F /* EditAllowanceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74990C264EC3CE00D5A66F /* EditAllowanceButton.swift */; };
+		9D74990E264EC3F700D5A66F /* EditAllowanceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74990C264EC3CE00D5A66F /* EditAllowanceButton.swift */; };
+		9D7499132652B18200D5A66F /* Double+formattedAsAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499122652B0C600D5A66F /* Double+formattedAsAmount.swift */; };
+		9D7499142652B18300D5A66F /* Double+formattedAsAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499122652B0C600D5A66F /* Double+formattedAsAmount.swift */; };
+		9D7499162652B2A400D5A66F /* TodaysExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499152652B2A400D5A66F /* TodaysExpenses.swift */; };
+		9D7499172652B2A400D5A66F /* TodaysExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499152652B2A400D5A66F /* TodaysExpenses.swift */; };
+		9D7499192652B37800D5A66F /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499182652B37800D5A66F /* Expenses.swift */; };
+		9D74991A2652B37800D5A66F /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499182652B37800D5A66F /* Expenses.swift */; };
+		9D74991C2652D08D00D5A66F /* ExpenseForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74991B2652D08700D5A66F /* ExpenseForm.swift */; };
+		9D74991D2652D08E00D5A66F /* ExpenseForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74991B2652D08700D5A66F /* ExpenseForm.swift */; };
+		9D74991F2652D7B000D5A66F /* NewExpenseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74991E2652D7B000D5A66F /* NewExpenseButton.swift */; };
+		9D7499202652D7B000D5A66F /* NewExpenseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74991E2652D7B000D5A66F /* NewExpenseButton.swift */; };
+		9DCB444226556F3000CDF124 /* AllExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB444126556F3000CDF124 /* AllExpenses.swift */; };
+		9DCB444326556F3000CDF124 /* AllExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB444126556F3000CDF124 /* AllExpenses.swift */; };
+		9DCB44452655782000CDF124 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
+		9DCB44462655782000CDF124 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
+		9DF20FC82668ED21004AF243 /* AllowanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC62668EC75004AF243 /* AllowanceAmount.swift */; };
+		9DF20FC92668ED22004AF243 /* AllowanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC62668EC75004AF243 /* AllowanceAmount.swift */; };
+		9DF20FCA2668ED23004AF243 /* AllowanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC62668EC75004AF243 /* AllowanceAmount.swift */; };
+		9DF20FCB2668ED24004AF243 /* AllowanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC62668EC75004AF243 /* AllowanceAmount.swift */; };
+		9DF20FCC2668ED25004AF243 /* AllowanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC62668EC75004AF243 /* AllowanceAmount.swift */; };
+		9DF20FCD2668F1A7004AF243 /* AllowanceBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC52668EB47004AF243 /* AllowanceBox.swift */; };
+		9DF20FCE2668F1A8004AF243 /* AllowanceBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC52668EB47004AF243 /* AllowanceBox.swift */; };
+		9DF20FD6266914EA004AF243 /* Int32+inCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */; };
+		9DF20FD7266914EB004AF243 /* Int32+inCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */; };
+		9DF20FD8266914EC004AF243 /* Int32+inCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */; };
+		9DF20FD9266914EC004AF243 /* Int32+inCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */; };
+		9DF20FDA266914EE004AF243 /* Int32+inCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */; };
+		9DF20FDB266A809B004AF243 /* WelcomeMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43BB266782B000D89443 /* WelcomeMessage.swift */; };
+		9DF20FE1266A8292004AF243 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A053265BBE2E009C1261 /* Intents.framework */; };
+		9DF20FE8266A8292004AF243 /* Intents (watchOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF20FE0266A8292004AF243 /* Intents (watchOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9DF20FED266A8393004AF243 /* AllowanceIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */; };
+		9DF20FEE266A8393004AF243 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A078265BC456009C1261 /* IntentHandler.swift */; };
+		9DF20FEF266A839E004AF243 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43A82665351900D89443 /* Intents.intentdefinition */; };
+		9DF20FF1266A83D8004AF243 /* Neverbroke.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0BC265EA2F8009C1261 /* Neverbroke.xcdatamodeld */; };
+		9DF20FF2266A83DE004AF243 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0C7265FB0DB009C1261 /* ExpenseItem.swift */; };
+		9DF20FF3266A83DE004AF243 /* AllowanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC62668EC75004AF243 /* AllowanceAmount.swift */; };
+		9DF20FF4266A83DE004AF243 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F8264DA19400D5A66F /* UserPreferences.swift */; };
+		9DF20FF5266A83DE004AF243 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
+		9DF20FF6266A83F8004AF243 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
+		9DF20FF7266A83F8004AF243 /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
+		9DF20FF8266A83FF004AF243 /* Int32+inCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */; };
+		9DF20FF9266A83FF004AF243 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2192656DACA005F5A06 /* Formatter.swift */; };
+		9DF20FFA266A83FF004AF243 /* Double+inCents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43B12666AA1900D89443 /* Double+inCents.swift */; };
+		9DF20FFB266A83FF004AF243 /* Double+formattedAsAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499122652B0C600D5A66F /* Double+formattedAsAmount.swift */; };
+		9DF20FFC266A83FF004AF243 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
+		9DF20FFD266A83FF004AF243 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
+		9DF21003266A84FB004AF243 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A053265BBE2E009C1261 /* Intents.framework */; };
+		9DF2100A266A84FB004AF243 /* Intents (macOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF21002266A84FB004AF243 /* Intents (macOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9DF2100F266A8577004AF243 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43A82665351900D89443 /* Intents.intentdefinition */; };
+		9DF21010266A8577004AF243 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A078265BC456009C1261 /* IntentHandler.swift */; };
+		9DF21011266A8577004AF243 /* AllowanceIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */; };
+		9DF21012266A8583004AF243 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
+		9DF21013266A8583004AF243 /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
+		9DF21014266A858B004AF243 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F8264DA19400D5A66F /* UserPreferences.swift */; };
+		9DF21015266A858B004AF243 /* AllowanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC62668EC75004AF243 /* AllowanceAmount.swift */; };
+		9DF21016266A858B004AF243 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
+		9DF21017266A858B004AF243 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0C7265FB0DB009C1261 /* ExpenseItem.swift */; };
+		9DF21018266A858E004AF243 /* Neverbroke.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0BC265EA2F8009C1261 /* Neverbroke.xcdatamodeld */; };
+		9DF21019266A8592004AF243 /* Double+formattedAsAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499122652B0C600D5A66F /* Double+formattedAsAmount.swift */; };
+		9DF2101A266A8592004AF243 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2192656DACA005F5A06 /* Formatter.swift */; };
+		9DF2101B266A8592004AF243 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
+		9DF2101C266A8592004AF243 /* Int32+inCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */; };
+		9DF2101D266A8592004AF243 /* Double+inCents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43B12666AA1900D89443 /* Double+inCents.swift */; };
+		9DF2101E266A8592004AF243 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
+		9DF21024266A87D1004AF243 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D52B222265818D5005F5A06 /* WidgetKit.framework */; };
+		9DF21025266A87D1004AF243 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D52B224265818D5005F5A06 /* SwiftUI.framework */; };
+		9DF2102A266A87D1004AF243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF21029266A87D1004AF243 /* Assets.xcassets */; };
+		9DF2102F266A87D1004AF243 /* Widget (macOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF21023266A87D1004AF243 /* Widget (macOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9DF21033266A8A1E004AF243 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A097265E8B70009C1261 /* CloudKit.framework */; };
+		9DF21035266A8A66004AF243 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A097265E8B70009C1261 /* CloudKit.framework */; };
+		9DF21037266A8A77004AF243 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A10026601631009C1261 /* CloudKit.framework */; };
+		9DF21038266A8AE6004AF243 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
+		9DF21039266A8AE6004AF243 /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
+		9DF2103A266A8AEB004AF243 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0C7265FB0DB009C1261 /* ExpenseItem.swift */; };
+		9DF2103B266A8AEB004AF243 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
+		9DF2103C266A8AEB004AF243 /* AllowanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC62668EC75004AF243 /* AllowanceAmount.swift */; };
+		9DF2103D266A8AEB004AF243 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F8264DA19400D5A66F /* UserPreferences.swift */; };
+		9DF2103E266A8AEE004AF243 /* Neverbroke.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0BC265EA2F8009C1261 /* Neverbroke.xcdatamodeld */; };
+		9DF2103F266A8AF2004AF243 /* Double+inCents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43B12666AA1900D89443 /* Double+inCents.swift */; };
+		9DF21040266A8AF2004AF243 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
+		9DF21041266A8AF2004AF243 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
+		9DF21042266A8AF2004AF243 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2192656DACA005F5A06 /* Formatter.swift */; };
+		9DF21043266A8AF2004AF243 /* Int32+inCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */; };
+		9DF21044266A8AF2004AF243 /* Double+formattedAsAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7499122652B0C600D5A66F /* Double+formattedAsAmount.swift */; };
+		9DF21045266A8CB5004AF243 /* AllowanceWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B229265818D5005F5A06 /* AllowanceWidget.intentdefinition */; };
+		9DF21046266A8CB5004AF243 /* AllowanceWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B227265818D5005F5A06 /* AllowanceWidget.swift */; };
+		9DF21047266ADCE0004AF243 /* AllowanceWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B229265818D5005F5A06 /* AllowanceWidget.intentdefinition */; };
+		9DF21048266ADCE1004AF243 /* AllowanceWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B229265818D5005F5A06 /* AllowanceWidget.intentdefinition */; };
+		9DF2104A266ADD63004AF243 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43A82665351900D89443 /* Intents.intentdefinition */; };
+		9DF2104B266ADD64004AF243 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43A82665351900D89443 /* Intents.intentdefinition */; };
+		9DF2104D266ADD69004AF243 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43A82665351900D89443 /* Intents.intentdefinition */; };
+		9DF2104E266AE20A004AF243 /* AllowanceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749908264EC0A500D5A66F /* AllowanceForm.swift */; };
+		9DF21098266B8B06004AF243 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF21097266B8B06004AF243 /* ComplicationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D52B22F265818D6005F5A06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D52B21F265818D5005F5A06;
+			remoteInfo = AllowanceWidgetExtension;
+		};
+		9D64A07B265BC456009C1261 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D64A074265BC456009C1261;
+			remoteInfo = NeverbrokeIntents;
+		};
+		9D64A0E4266013C3009C1261 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D64A0E1266013C3009C1261;
+			remoteInfo = "Neverbroke2 WatchKit Extension";
+		};
+		9DF20FE6266A8292004AF243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DF20FDF266A8292004AF243;
+			remoteInfo = Intents;
+		};
+		9DF21008266A84FB004AF243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DF21001266A84FB004AF243;
+			remoteInfo = NeverbrokeIntents;
+		};
+		9DF2102D266A87D1004AF243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DF21022266A87D1004AF243;
+			remoteInfo = AllowanceWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D52B235265818D6005F5A06 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9D52B231265818D6005F5A06 /* Widget (iOS).appex in Embed App Extensions */,
+				9D64A07D265BC456009C1261 /* Intents (iOS).appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D64A0F6266013C4009C1261 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9D64A0E3266013C3009C1261 /* WatchKit (watchOS).appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF20FEC266A8292004AF243 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9DF20FE8266A8292004AF243 /* Intents (watchOS).appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF2100E266A84FB004AF243 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9DF2100A266A84FB004AF243 /* Intents (macOS).appex in Embed App Extensions */,
+				9DF2102F266A87D1004AF243 /* Widget (macOS).appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9D061F3C26679B1D009355F2 /* SpentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpentButton.swift; sourceTree = "<group>"; };
+		9D061F3E26679C58009355F2 /* CurrencyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyButton.swift; sourceTree = "<group>"; };
+		9D061F45266817F0009355F2 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		9D52B1E52656B922005F5A06 /* ExpenseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseList.swift; sourceTree = "<group>"; };
+		9D52B2162656D9BB005F5A06 /* ExpenseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetails.swift; sourceTree = "<group>"; };
+		9D52B2192656DACA005F5A06 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		9D52B220265818D5005F5A06 /* Widget (iOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Widget (iOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D52B222265818D5005F5A06 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9D52B224265818D5005F5A06 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9D52B227265818D5005F5A06 /* AllowanceWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceWidget.swift; sourceTree = "<group>"; };
+		9D52B229265818D5005F5A06 /* AllowanceWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = AllowanceWidget.intentdefinition; sourceTree = "<group>"; };
+		9D52B22A265818D6005F5A06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D52B22C265818D6005F5A06 /* iOS-Widget.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-Widget.Info.plist"; sourceTree = "<group>"; };
+		9D52B236265819F0005F5A06 /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
+		9D52B23726581A26005F5A06 /* iOS-Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Widget.entitlements"; sourceTree = "<group>"; };
+		9D64A053265BBE2E009C1261 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		9D64A075265BC456009C1261 /* Intents (iOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents (iOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D64A078265BC456009C1261 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		9D64A07A265BC456009C1261 /* iOS-Intents.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-Intents.Info.plist"; sourceTree = "<group>"; };
+		9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceIntentHandler.swift; sourceTree = "<group>"; };
+		9D64A08C265C00E4009C1261 /* iOS-Intents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Intents.entitlements"; sourceTree = "<group>"; };
+		9D64A08D265C02B0009C1261 /* RemoveExpenseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveExpenseButton.swift; sourceTree = "<group>"; };
+		9D64A091265E67A3009C1261 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		9D64A093265E8490009C1261 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		9D64A097265E8B70009C1261 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceContainer.swift; sourceTree = "<group>"; };
+		9D64A0BD265EA2F8009C1261 /* Neverbroke.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Neverbroke.xcdatamodel; sourceTree = "<group>"; };
+		9D64A0C5265EBF29009C1261 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D64A0C7265FB0DB009C1261 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		9D64A0CC265FB7F2009C1261 /* RemainingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingBox.swift; sourceTree = "<group>"; };
+		9D64A0D6266013C0009C1261 /* Neverbroke (watchOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neverbroke (watchOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D64A0DB266013C2009C1261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D64A0DD266013C3009C1261 /* watchOS.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = watchOS.Info.plist; sourceTree = "<group>"; };
+		9D64A0E2266013C3009C1261 /* WatchKit (watchOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKit (watchOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D64A0E7266013C3009C1261 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D64A0E9266013C3009C1261 /* NeverbrokeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverbrokeApp.swift; sourceTree = "<group>"; };
+		9D64A0ED266013C4009C1261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D64A0F2266013C4009C1261 /* watchOS-Extension.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "watchOS-Extension.Info.plist"; sourceTree = "<group>"; };
+		9D64A0FE266014E5009C1261 /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
+		9D64A0FF266015FE009C1261 /* watchOS-Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watchOS-Extension.entitlements"; sourceTree = "<group>"; };
+		9D64A10026601631009C1261 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		9D6B43A82665351900D89443 /* Intents.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		9D6B43AB266544D700D89443 /* CurrencyForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyForm.swift; sourceTree = "<group>"; };
+		9D6B43AD26668B2F00D89443 /* AllowanceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceButton.swift; sourceTree = "<group>"; };
+		9D6B43B12666AA1900D89443 /* Double+inCents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+inCents.swift"; sourceTree = "<group>"; };
+		9D6B43B72666ADDE00D89443 /* AmountStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountStepper.swift; sourceTree = "<group>"; };
+		9D6B43B92666AFE500D89443 /* RemainingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingButton.swift; sourceTree = "<group>"; };
+		9D6B43BB266782B000D89443 /* WelcomeMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessage.swift; sourceTree = "<group>"; };
+		9D7498CE264D7C5400D5A66F /* NeverbrokeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverbrokeApp.swift; sourceTree = "<group>"; };
+		9D7498CF264D7C5400D5A66F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D7498D0264D7C5600D5A66F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D7498D5264D7C5700D5A66F /* Neverbroke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neverbroke.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7498D8264D7C5700D5A66F /* iOS.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.Info.plist; sourceTree = "<group>"; };
+		9D7498DD264D7C5700D5A66F /* Neverbroke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neverbroke.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7498DF264D7C5700D5A66F /* macOS.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.Info.plist; sourceTree = "<group>"; };
+		9D7498E0264D7C5700D5A66F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9D7498EF264D9D1F00D5A66F /* UserPreferencesForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesForm.swift; sourceTree = "<group>"; };
+		9D7498F2264D9D9600D5A66F /* UserPreferencesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesButton.swift; sourceTree = "<group>"; };
+		9D7498F8264DA19400D5A66F /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbol.swift; sourceTree = "<group>"; };
+		9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverbrokeStore.swift; sourceTree = "<group>"; };
+		9D749908264EC0A500D5A66F /* AllowanceForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceForm.swift; sourceTree = "<group>"; };
+		9D74990C264EC3CE00D5A66F /* EditAllowanceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAllowanceButton.swift; sourceTree = "<group>"; };
+		9D7499122652B0C600D5A66F /* Double+formattedAsAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+formattedAsAmount.swift"; sourceTree = "<group>"; };
+		9D7499152652B2A400D5A66F /* TodaysExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysExpenses.swift; sourceTree = "<group>"; };
+		9D7499182652B37800D5A66F /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		9D74991B2652D08700D5A66F /* ExpenseForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseForm.swift; sourceTree = "<group>"; };
+		9D74991E2652D7B000D5A66F /* NewExpenseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseButton.swift; sourceTree = "<group>"; };
+		9DC97CBB266FF40C00DF0BBC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9DC97CBC266FF40C00DF0BBC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9DC97CBD266FF40C00DF0BBC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9DC97CBE266FF42E00DF0BBC /* .gitconfig */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .gitconfig; sourceTree = "<group>"; };
+		9DCB444126556F3000CDF124 /* AllExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExpenses.swift; sourceTree = "<group>"; };
+		9DCB44442655782000CDF124 /* String+isEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isEmoji.swift"; sourceTree = "<group>"; };
+		9DCB444A26569EC200CDF124 /* Dates.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dates.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int32+inCurrency.swift"; sourceTree = "<group>"; };
+		9DF20FC52668EB47004AF243 /* AllowanceBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceBox.swift; sourceTree = "<group>"; };
+		9DF20FC62668EC75004AF243 /* AllowanceAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceAmount.swift; sourceTree = "<group>"; };
+		9DF20FE0266A8292004AF243 /* Intents (watchOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents (watchOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF20FE5266A8292004AF243 /* watchOS-Intents.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "watchOS-Intents.Info.plist"; sourceTree = "<group>"; };
+		9DF21002266A84FB004AF243 /* Intents (macOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents (macOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF21007266A84FB004AF243 /* macOS-Intents.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "macOS-Intents.Info.plist"; sourceTree = "<group>"; };
+		9DF21023266A87D1004AF243 /* Widget (macOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Widget (macOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF21029266A87D1004AF243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DF2102B266A87D1004AF243 /* macOS-Widget.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "macOS-Widget.Info.plist"; sourceTree = "<group>"; };
+		9DF2102C266A87D1004AF243 /* macOS-Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "macOS-Widget.entitlements"; sourceTree = "<group>"; };
+		9DF21034266A8A62004AF243 /* macOS-Intents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "macOS-Intents.entitlements"; sourceTree = "<group>"; };
+		9DF21036266A8A70004AF243 /* watchOS-Intents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watchOS-Intents.entitlements"; sourceTree = "<group>"; };
+		9DF21097266B8B06004AF243 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D52B21D265818D5005F5A06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D64A095265E897A009C1261 /* CloudKit.framework in Frameworks */,
+				9D52B225265818D5005F5A06 /* SwiftUI.framework in Frameworks */,
+				9D52B223265818D5005F5A06 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D64A072265BC456009C1261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D64A076265BC456009C1261 /* Intents.framework in Frameworks */,
+				9D64A096265E8986009C1261 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D64A0DF266013C3009C1261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D64A10126601631009C1261 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7498D2264D7C5700D5A66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D64A092265E67A3009C1261 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7498DA264D7C5700D5A66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D64A098265E8B70009C1261 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF20FDD266A8292004AF243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF20FE1266A8292004AF243 /* Intents.framework in Frameworks */,
+				9DF21037266A8A77004AF243 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF20FFF266A84FB004AF243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF21003266A84FB004AF243 /* Intents.framework in Frameworks */,
+				9DF21035266A8A66004AF243 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF21020266A87D1004AF243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF21033266A8A1E004AF243 /* CloudKit.framework in Frameworks */,
+				9DF21025266A87D1004AF243 /* SwiftUI.framework in Frameworks */,
+				9DF21024266A87D1004AF243 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D52B221265818D5005F5A06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D64A10026601631009C1261 /* CloudKit.framework */,
+				9D64A097265E8B70009C1261 /* CloudKit.framework */,
+				9D64A091265E67A3009C1261 /* CloudKit.framework */,
+				9D52B222265818D5005F5A06 /* WidgetKit.framework */,
+				9D52B224265818D5005F5A06 /* SwiftUI.framework */,
+				9D64A053265BBE2E009C1261 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D52B226265818D5005F5A06 /* Shared-AllowanceWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9D52B227265818D5005F5A06 /* AllowanceWidget.swift */,
+				9D52B229265818D5005F5A06 /* AllowanceWidget.intentdefinition */,
+			);
+			path = "Shared-AllowanceWidget";
+			sourceTree = "<group>";
+		};
+		9D64A077265BC456009C1261 /* Shared-Intents */ = {
+			isa = PBXGroup;
+			children = (
+				9D6B43A82665351900D89443 /* Intents.intentdefinition */,
+				9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */,
+				9D64A078265BC456009C1261 /* IntentHandler.swift */,
+			);
+			path = "Shared-Intents";
+			sourceTree = "<group>";
+		};
+		9D64A0DA266013C0009C1261 /* watchOS-Stub */ = {
+			isa = PBXGroup;
+			children = (
+				9D64A0DB266013C2009C1261 /* Assets.xcassets */,
+			);
+			path = "watchOS-Stub";
+			sourceTree = "<group>";
+		};
+		9D64A0E6266013C3009C1261 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D6B43B72666ADDE00D89443 /* AmountStepper.swift */,
+				9DF21097266B8B06004AF243 /* ComplicationController.swift */,
+				9D6B43AD26668B2F00D89443 /* AllowanceButton.swift */,
+				9D6B43B92666AFE500D89443 /* RemainingButton.swift */,
+				9D061F3C26679B1D009355F2 /* SpentButton.swift */,
+				9D061F3E26679C58009355F2 /* CurrencyButton.swift */,
+				9D64A0E7266013C3009C1261 /* ContentView.swift */,
+				9D6B43AB266544D700D89443 /* CurrencyForm.swift */,
+				9D64A0E9266013C3009C1261 /* NeverbrokeApp.swift */,
+				9D64A0ED266013C4009C1261 /* Assets.xcassets */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		9D6B43A7266531EF00D89443 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9D64A08C265C00E4009C1261 /* iOS-Intents.entitlements */,
+				9D64A07A265BC456009C1261 /* iOS-Intents.Info.plist */,
+				9D52B23726581A26005F5A06 /* iOS-Widget.entitlements */,
+				9D52B22C265818D6005F5A06 /* iOS-Widget.Info.plist */,
+				9D52B236265819F0005F5A06 /* iOS.entitlements */,
+				9D7498D8264D7C5700D5A66F /* iOS.Info.plist */,
+				9DF21034266A8A62004AF243 /* macOS-Intents.entitlements */,
+				9DF21007266A84FB004AF243 /* macOS-Intents.Info.plist */,
+				9DF2102C266A87D1004AF243 /* macOS-Widget.entitlements */,
+				9DF2102B266A87D1004AF243 /* macOS-Widget.Info.plist */,
+				9D7498E0264D7C5700D5A66F /* macOS.entitlements */,
+				9D7498DF264D7C5700D5A66F /* macOS.Info.plist */,
+				9D64A0FF266015FE009C1261 /* watchOS-Extension.entitlements */,
+				9D64A0F2266013C4009C1261 /* watchOS-Extension.Info.plist */,
+				9DF21036266A8A70004AF243 /* watchOS-Intents.entitlements */,
+				9DF20FE5266A8292004AF243 /* watchOS-Intents.Info.plist */,
+				9D64A0FE266014E5009C1261 /* watchOS.entitlements */,
+				9D64A0DD266013C3009C1261 /* watchOS.Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		9D7498C8264D7C5300D5A66F = {
+			isa = PBXGroup;
+			children = (
+				9DC97CC0266FF5F600DF0BBC /* Sources */,
+				9DCB444B26569ECD00CDF124 /* Playgrounds */,
+				9D6B43A7266531EF00D89443 /* Config */,
+				9DC97CBF266FF44800DF0BBC /* Support */,
+				9D52B221265818D5005F5A06 /* Frameworks */,
+				9D7498D6264D7C5700D5A66F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D7498CD264D7C5400D5A66F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9DCB444926557B4F00CDF124 /* Support */,
+				9DCB444826557B3600CDF124 /* Model */,
+				9DCB444726557B1500CDF124 /* Extensions */,
+				9D749908264EC0A500D5A66F /* AllowanceForm.swift */,
+				9D74990C264EC3CE00D5A66F /* EditAllowanceButton.swift */,
+				9D74991B2652D08700D5A66F /* ExpenseForm.swift */,
+				9D64A0CC265FB7F2009C1261 /* RemainingBox.swift */,
+				9DF20FC52668EB47004AF243 /* AllowanceBox.swift */,
+				9D52B2162656D9BB005F5A06 /* ExpenseDetails.swift */,
+				9D7499182652B37800D5A66F /* Expenses.swift */,
+				9D52B1E52656B922005F5A06 /* ExpenseList.swift */,
+				9D74991E2652D7B000D5A66F /* NewExpenseButton.swift */,
+				9D64A08D265C02B0009C1261 /* RemoveExpenseButton.swift */,
+				9D7499152652B2A400D5A66F /* TodaysExpenses.swift */,
+				9D6B43BB266782B000D89443 /* WelcomeMessage.swift */,
+				9DCB444126556F3000CDF124 /* AllExpenses.swift */,
+				9D7498F2264D9D9600D5A66F /* UserPreferencesButton.swift */,
+				9D7498EF264D9D1F00D5A66F /* UserPreferencesForm.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		9D7498D6264D7C5700D5A66F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D7498D5264D7C5700D5A66F /* Neverbroke.app */,
+				9D7498DD264D7C5700D5A66F /* Neverbroke.app */,
+				9D52B220265818D5005F5A06 /* Widget (iOS).appex */,
+				9D64A075265BC456009C1261 /* Intents (iOS).appex */,
+				9D64A0D6266013C0009C1261 /* Neverbroke (watchOS).app */,
+				9D64A0E2266013C3009C1261 /* WatchKit (watchOS).appex */,
+				9DF20FE0266A8292004AF243 /* Intents (watchOS).appex */,
+				9DF21002266A84FB004AF243 /* Intents (macOS).appex */,
+				9DF21023266A87D1004AF243 /* Widget (macOS).appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D7498D7264D7C5700D5A66F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D7498CF264D7C5400D5A66F /* ContentView.swift */,
+				9D64A093265E8490009C1261 /* Settings.bundle */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9D7498DE264D7C5700D5A66F /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D64A0C5265EBF29009C1261 /* ContentView.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		9DC97CBF266FF44800DF0BBC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9DC97CBC266FF40C00DF0BBC /* README.md */,
+				9DC97CBD266FF40C00DF0BBC /* LICENSE */,
+				9DC97CBB266FF40C00DF0BBC /* .gitignore */,
+				9DC97CBE266FF42E00DF0BBC /* .gitconfig */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		9DC97CC0266FF5F600DF0BBC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9D7498CD264D7C5400D5A66F /* Shared */,
+				9D7498D7264D7C5700D5A66F /* iOS */,
+				9D7498DE264D7C5700D5A66F /* macOS */,
+				9D64A0E6266013C3009C1261 /* watchOS */,
+				9D64A0DA266013C0009C1261 /* watchOS-Stub */,
+				9D52B226265818D5005F5A06 /* Shared-AllowanceWidget */,
+				9DF21096266B8A82004AF243 /* iOS-AllowanceWidget */,
+				9DF21026266A87D1004AF243 /* macOS-AllowanceWidget */,
+				9D64A077265BC456009C1261 /* Shared-Intents */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9DCB444726557B1500CDF124 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D52B2192656DACA005F5A06 /* Formatter.swift */,
+				9D6B43B12666AA1900D89443 /* Double+inCents.swift */,
+				9D7499122652B0C600D5A66F /* Double+formattedAsAmount.swift */,
+				9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */,
+				9DCB44442655782000CDF124 /* String+isEmoji.swift */,
+				9D061F45266817F0009355F2 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9DCB444826557B3600CDF124 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D64A0BC265EA2F8009C1261 /* Neverbroke.xcdatamodeld */,
+				9D7498F8264DA19400D5A66F /* UserPreferences.swift */,
+				9D64A0C7265FB0DB009C1261 /* ExpenseItem.swift */,
+				9DF20FC62668EC75004AF243 /* AllowanceAmount.swift */,
+				9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DCB444926557B4F00CDF124 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9D7498D0264D7C5600D5A66F /* Assets.xcassets */,
+				9D7498CE264D7C5400D5A66F /* NeverbrokeApp.swift */,
+				9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */,
+				9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9DCB444B26569ECD00CDF124 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				9DCB444A26569EC200CDF124 /* Dates.playground */,
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		9DF21026266A87D1004AF243 /* macOS-AllowanceWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9DF21029266A87D1004AF243 /* Assets.xcassets */,
+			);
+			path = "macOS-AllowanceWidget";
+			sourceTree = "<group>";
+		};
+		9DF21096266B8A82004AF243 /* iOS-AllowanceWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9D52B22A265818D6005F5A06 /* Assets.xcassets */,
+			);
+			path = "iOS-AllowanceWidget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D52B21F265818D5005F5A06 /* Widget (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D52B232265818D6005F5A06 /* Build configuration list for PBXNativeTarget "Widget (iOS)" */;
+			buildPhases = (
+				9D52B21C265818D5005F5A06 /* Sources */,
+				9D52B21D265818D5005F5A06 /* Frameworks */,
+				9D52B21E265818D5005F5A06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Widget (iOS)";
+			productName = AllowanceWidgetExtension;
+			productReference = 9D52B220265818D5005F5A06 /* Widget (iOS).appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9D64A074265BC456009C1261 /* Intents (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D64A07E265BC456009C1261 /* Build configuration list for PBXNativeTarget "Intents (iOS)" */;
+			buildPhases = (
+				9D64A071265BC456009C1261 /* Sources */,
+				9D64A072265BC456009C1261 /* Frameworks */,
+				9D64A073265BC456009C1261 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intents (iOS)";
+			productName = NeverbrokeIntents;
+			productReference = 9D64A075265BC456009C1261 /* Intents (iOS).appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9D64A0D5266013C0009C1261 /* Neverbroke (watchOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D64A0F7266013C4009C1261 /* Build configuration list for PBXNativeTarget "Neverbroke (watchOS)" */;
+			buildPhases = (
+				9D64A0D4266013C0009C1261 /* Resources */,
+				9D64A0F6266013C4009C1261 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D64A0E5266013C3009C1261 /* PBXTargetDependency */,
+			);
+			name = "Neverbroke (watchOS)";
+			productName = "Neverbroke2 WatchKit App";
+			productReference = 9D64A0D6266013C0009C1261 /* Neverbroke (watchOS).app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9D64A0E1266013C3009C1261 /* WatchKit (watchOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D64A0F3266013C4009C1261 /* Build configuration list for PBXNativeTarget "WatchKit (watchOS)" */;
+			buildPhases = (
+				9D64A0DE266013C3009C1261 /* Sources */,
+				9D64A0DF266013C3009C1261 /* Frameworks */,
+				9D64A0E0266013C3009C1261 /* Resources */,
+				9DF20FEC266A8292004AF243 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DF20FE7266A8292004AF243 /* PBXTargetDependency */,
+			);
+			name = "WatchKit (watchOS)";
+			productName = "Neverbroke2 WatchKit Extension";
+			productReference = 9D64A0E2266013C3009C1261 /* WatchKit (watchOS).appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		9D7498D4264D7C5700D5A66F /* Neverbroke (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7498E9264D7C5700D5A66F /* Build configuration list for PBXNativeTarget "Neverbroke (iOS)" */;
+			buildPhases = (
+				9D7498D1264D7C5700D5A66F /* Sources */,
+				9D7498D2264D7C5700D5A66F /* Frameworks */,
+				9D7498D3264D7C5700D5A66F /* Resources */,
+				9D52B235265818D6005F5A06 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D52B230265818D6005F5A06 /* PBXTargetDependency */,
+				9D64A07C265BC456009C1261 /* PBXTargetDependency */,
+			);
+			name = "Neverbroke (iOS)";
+			productName = "Neverbroke2 (iOS)";
+			productReference = 9D7498D5264D7C5700D5A66F /* Neverbroke.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D7498DC264D7C5700D5A66F /* Neverbroke (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7498EC264D7C5700D5A66F /* Build configuration list for PBXNativeTarget "Neverbroke (macOS)" */;
+			buildPhases = (
+				9D7498D9264D7C5700D5A66F /* Sources */,
+				9D7498DA264D7C5700D5A66F /* Frameworks */,
+				9D7498DB264D7C5700D5A66F /* Resources */,
+				9DF2100E266A84FB004AF243 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DF21009266A84FB004AF243 /* PBXTargetDependency */,
+				9DF2102E266A87D1004AF243 /* PBXTargetDependency */,
+			);
+			name = "Neverbroke (macOS)";
+			productName = "Neverbroke2 (macOS)";
+			productReference = 9D7498DD264D7C5700D5A66F /* Neverbroke.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DF20FDF266A8292004AF243 /* Intents (watchOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF20FE9266A8292004AF243 /* Build configuration list for PBXNativeTarget "Intents (watchOS)" */;
+			buildPhases = (
+				9DF20FDC266A8292004AF243 /* Sources */,
+				9DF20FDD266A8292004AF243 /* Frameworks */,
+				9DF20FDE266A8292004AF243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intents (watchOS)";
+			productName = Intents;
+			productReference = 9DF20FE0266A8292004AF243 /* Intents (watchOS).appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9DF21001266A84FB004AF243 /* Intents (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF2100B266A84FB004AF243 /* Build configuration list for PBXNativeTarget "Intents (macOS)" */;
+			buildPhases = (
+				9DF20FFE266A84FB004AF243 /* Sources */,
+				9DF20FFF266A84FB004AF243 /* Frameworks */,
+				9DF21000266A84FB004AF243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intents (macOS)";
+			productName = NeverbrokeIntents;
+			productReference = 9DF21002266A84FB004AF243 /* Intents (macOS).appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9DF21022266A87D1004AF243 /* Widget (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF21030266A87D1004AF243 /* Build configuration list for PBXNativeTarget "Widget (macOS)" */;
+			buildPhases = (
+				9DF2101F266A87D1004AF243 /* Sources */,
+				9DF21020266A87D1004AF243 /* Frameworks */,
+				9DF21021266A87D1004AF243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Widget (macOS)";
+			productName = AllowanceWidgetExtension;
+			productReference = 9DF21023266A87D1004AF243 /* Widget (macOS).appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D7498C9264D7C5300D5A66F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9D52B21F265818D5005F5A06 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					9D64A074265BC456009C1261 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					9D64A0D5266013C0009C1261 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					9D64A0E1266013C3009C1261 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					9D7498D4264D7C5700D5A66F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					9D7498DC264D7C5700D5A66F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					9DF20FDF266A8292004AF243 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					9DF21001266A84FB004AF243 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					9DF21022266A87D1004AF243 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 9D7498CC264D7C5300D5A66F /* Build configuration list for PBXProject "Neverbroke" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D7498C8264D7C5300D5A66F;
+			productRefGroup = 9D7498D6264D7C5700D5A66F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D7498D4264D7C5700D5A66F /* Neverbroke (iOS) */,
+				9D7498DC264D7C5700D5A66F /* Neverbroke (macOS) */,
+				9D64A0D5266013C0009C1261 /* Neverbroke (watchOS) */,
+				9D64A0E1266013C3009C1261 /* WatchKit (watchOS) */,
+				9D52B21F265818D5005F5A06 /* Widget (iOS) */,
+				9DF21022266A87D1004AF243 /* Widget (macOS) */,
+				9D64A074265BC456009C1261 /* Intents (iOS) */,
+				9DF21001266A84FB004AF243 /* Intents (macOS) */,
+				9DF20FDF266A8292004AF243 /* Intents (watchOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D52B21E265818D5005F5A06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D52B22B265818D6005F5A06 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D64A073265BC456009C1261 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D64A0D4266013C0009C1261 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D64A0DC266013C2009C1261 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D64A0E0266013C3009C1261 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D64A0EE266013C4009C1261 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7498D3264D7C5700D5A66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D64A094265E84E8009C1261 /* Settings.bundle in Resources */,
+				9D7498E5264D7C5700D5A66F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7498DB264D7C5700D5A66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7498E6264D7C5700D5A66F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF20FDE266A8292004AF243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF21000266A84FB004AF243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF21021266A87D1004AF243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF2102A266A87D1004AF243 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D52B21C265818D5005F5A06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D52B23C265823D1005F5A06 /* NeverbrokeStore.swift in Sources */,
+				9D52B23B265823CB005F5A06 /* CurrencySymbol.swift in Sources */,
+				9D52B23D26582AF2005F5A06 /* Double+formattedAsAmount.swift in Sources */,
+				9DF20FCA2668ED23004AF243 /* AllowanceAmount.swift in Sources */,
+				9DF20FD8266914EC004AF243 /* Int32+inCurrency.swift in Sources */,
+				9D64A0C0265EA2F8009C1261 /* Neverbroke.xcdatamodeld in Sources */,
+				9D52B23E26582AF6005F5A06 /* Formatter.swift in Sources */,
+				9D52B22D265818D6005F5A06 /* AllowanceWidget.intentdefinition in Sources */,
+				9D52B23826581BF2005F5A06 /* UserPreferences.swift in Sources */,
+				9D6B43B42666AA7400D89443 /* Double+inCents.swift in Sources */,
+				9D64A0CA265FB11C009C1261 /* ExpenseItem.swift in Sources */,
+				9D061F48266817F0009355F2 /* Date.swift in Sources */,
+				9D52B23F26582AF9005F5A06 /* String+isEmoji.swift in Sources */,
+				9D64A0CF265FFE37009C1261 /* PersistenceContainer.swift in Sources */,
+				9D52B228265818D5005F5A06 /* AllowanceWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D64A071265BC456009C1261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6B43AA2665351900D89443 /* Intents.intentdefinition in Sources */,
+				9DF20FCB2668ED24004AF243 /* AllowanceAmount.swift in Sources */,
+				9D64A0D0265FFE37009C1261 /* PersistenceContainer.swift in Sources */,
+				9D64A085265BFC4C009C1261 /* CurrencySymbol.swift in Sources */,
+				9D64A0CB265FB11C009C1261 /* ExpenseItem.swift in Sources */,
+				9D061F49266817F0009355F2 /* Date.swift in Sources */,
+				9D64A08A265BFCB3009C1261 /* Formatter.swift in Sources */,
+				9D64A089265BFCB3009C1261 /* Double+formattedAsAmount.swift in Sources */,
+				9D64A087265BFC4C009C1261 /* UserPreferences.swift in Sources */,
+				9D6B43B52666AA7500D89443 /* Double+inCents.swift in Sources */,
+				9D64A084265BFC44009C1261 /* NeverbrokeStore.swift in Sources */,
+				9D64A08B265BFCB3009C1261 /* String+isEmoji.swift in Sources */,
+				9D64A079265BC456009C1261 /* IntentHandler.swift in Sources */,
+				9D64A0C1265EA2F8009C1261 /* Neverbroke.xcdatamodeld in Sources */,
+				9DF20FD9266914EC004AF243 /* Int32+inCurrency.swift in Sources */,
+				9D64A083265BF98D009C1261 /* AllowanceIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D64A0DE266013C3009C1261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6B43B82666ADDE00D89443 /* AmountStepper.swift in Sources */,
+				9D64A10B26602008009C1261 /* Formatter.swift in Sources */,
+				9D6B43BA2666AFE500D89443 /* RemainingButton.swift in Sources */,
+				9D6B43AC266544D700D89443 /* CurrencyForm.swift in Sources */,
+				9D64A10226601EF4009C1261 /* NeverbrokeStore.swift in Sources */,
+				9DF21098266B8B06004AF243 /* ComplicationController.swift in Sources */,
+				9D061F4226679D54009355F2 /* RemoveExpenseButton.swift in Sources */,
+				9D061F3D26679B1D009355F2 /* SpentButton.swift in Sources */,
+				9D061F4426679D67009355F2 /* ExpenseForm.swift in Sources */,
+				9D64A10C26602008009C1261 /* Double+formattedAsAmount.swift in Sources */,
+				9D64A10426601F1B009C1261 /* ExpenseItem.swift in Sources */,
+				9D64A10926601F1F009C1261 /* Neverbroke.xcdatamodeld in Sources */,
+				9D64A10D26602008009C1261 /* String+isEmoji.swift in Sources */,
+				9D64A0EA266013C3009C1261 /* NeverbrokeApp.swift in Sources */,
+				9D64A10726601F1B009C1261 /* UserPreferences.swift in Sources */,
+				9DF2104D266ADD69004AF243 /* Intents.intentdefinition in Sources */,
+				9DF20FCC2668ED25004AF243 /* AllowanceAmount.swift in Sources */,
+				9DF2104E266AE20A004AF243 /* AllowanceForm.swift in Sources */,
+				9DF20FDA266914EE004AF243 /* Int32+inCurrency.swift in Sources */,
+				9D061F4A266817F0009355F2 /* Date.swift in Sources */,
+				9D64A10526601F1B009C1261 /* CurrencySymbol.swift in Sources */,
+				9D061F4126679D39009355F2 /* ExpenseDetails.swift in Sources */,
+				9D6B43B62666AA7A00D89443 /* Double+inCents.swift in Sources */,
+				9D061F4026679D29009355F2 /* ExpenseList.swift in Sources */,
+				9D061F3F26679C58009355F2 /* CurrencyButton.swift in Sources */,
+				9D6B43B026668B2F00D89443 /* AllowanceButton.swift in Sources */,
+				9D061F4326679D5B009355F2 /* NewExpenseButton.swift in Sources */,
+				9D64A0E8266013C3009C1261 /* ContentView.swift in Sources */,
+				9D64A10326601F09009C1261 /* PersistenceContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7498D1264D7C5700D5A66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF20FD6266914EA004AF243 /* Int32+inCurrency.swift in Sources */,
+				9D6B43BC266782B000D89443 /* WelcomeMessage.swift in Sources */,
+				9D74991C2652D08D00D5A66F /* ExpenseForm.swift in Sources */,
+				9DCB44452655782000CDF124 /* String+isEmoji.swift in Sources */,
+				9D64A0BE265EA2F8009C1261 /* Neverbroke.xcdatamodeld in Sources */,
+				9D061F46266817F0009355F2 /* Date.swift in Sources */,
+				9DF2104A266ADD63004AF243 /* Intents.intentdefinition in Sources */,
+				9D749903264EB8B100D5A66F /* NeverbrokeStore.swift in Sources */,
+				9D52B21A2656DAD2005F5A06 /* Formatter.swift in Sources */,
+				9D74990A264EC30D00D5A66F /* AllowanceForm.swift in Sources */,
+				9D64A0C8265FB11A009C1261 /* ExpenseItem.swift in Sources */,
+				9D52B2182656D9BB005F5A06 /* ExpenseDetails.swift in Sources */,
+				9DF20FCD2668F1A7004AF243 /* AllowanceBox.swift in Sources */,
+				9D64A08E265C02B3009C1261 /* RemoveExpenseButton.swift in Sources */,
+				9D7499142652B18300D5A66F /* Double+formattedAsAmount.swift in Sources */,
+				9D7498F9264DA19400D5A66F /* UserPreferences.swift in Sources */,
+				9D74991A2652B37800D5A66F /* Expenses.swift in Sources */,
+				9D7498E3264D7C5700D5A66F /* ContentView.swift in Sources */,
+				9D64A0CE265FB8BC009C1261 /* RemainingBox.swift in Sources */,
+				9D74990D264EC3F600D5A66F /* EditAllowanceButton.swift in Sources */,
+				9D7498F3264D9D9600D5A66F /* UserPreferencesButton.swift in Sources */,
+				9D7498FC264DA33300D5A66F /* CurrencySymbol.swift in Sources */,
+				9D7499172652B2A400D5A66F /* TodaysExpenses.swift in Sources */,
+				9D52B1E72656B954005F5A06 /* ExpenseList.swift in Sources */,
+				9DF21047266ADCE0004AF243 /* AllowanceWidget.intentdefinition in Sources */,
+				9DCB444226556F3000CDF124 /* AllExpenses.swift in Sources */,
+				9DF20FC82668ED21004AF243 /* AllowanceAmount.swift in Sources */,
+				9D6B43B22666AA7200D89443 /* Double+inCents.swift in Sources */,
+				9D64A0BA265E9E0A009C1261 /* PersistenceContainer.swift in Sources */,
+				9D7499202652D7B000D5A66F /* NewExpenseButton.swift in Sources */,
+				9D7498E1264D7C5700D5A66F /* NeverbrokeApp.swift in Sources */,
+				9D7498F0264D9D1F00D5A66F /* UserPreferencesForm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7498D9264D7C5700D5A66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D74991D2652D08E00D5A66F /* ExpenseForm.swift in Sources */,
+				9DF20FC92668ED22004AF243 /* AllowanceAmount.swift in Sources */,
+				9D64A0C6265EBF2D009C1261 /* ContentView.swift in Sources */,
+				9D64A08F265C02B6009C1261 /* RemoveExpenseButton.swift in Sources */,
+				9DF20FD7266914EB004AF243 /* Int32+inCurrency.swift in Sources */,
+				9DCB44462655782000CDF124 /* String+isEmoji.swift in Sources */,
+				9DF2104B266ADD64004AF243 /* Intents.intentdefinition in Sources */,
+				9D749904264EB8B100D5A66F /* NeverbrokeStore.swift in Sources */,
+				9D061F47266817F0009355F2 /* Date.swift in Sources */,
+				9D52B21B2656DAD6005F5A06 /* Formatter.swift in Sources */,
+				9D74990B264EC30E00D5A66F /* AllowanceForm.swift in Sources */,
+				9D6B43B32666AA7300D89443 /* Double+inCents.swift in Sources */,
+				9D52B2172656D9BB005F5A06 /* ExpenseDetails.swift in Sources */,
+				9D7499132652B18200D5A66F /* Double+formattedAsAmount.swift in Sources */,
+				9D7498FA264DA19400D5A66F /* UserPreferences.swift in Sources */,
+				9DF20FCE2668F1A8004AF243 /* AllowanceBox.swift in Sources */,
+				9D7499192652B37800D5A66F /* Expenses.swift in Sources */,
+				9D64A0BF265EA2F8009C1261 /* Neverbroke.xcdatamodeld in Sources */,
+				9D74990E264EC3F700D5A66F /* EditAllowanceButton.swift in Sources */,
+				9DF20FDB266A809B004AF243 /* WelcomeMessage.swift in Sources */,
+				9D7498F4264D9D9600D5A66F /* UserPreferencesButton.swift in Sources */,
+				9D64A0C9265FB11B009C1261 /* ExpenseItem.swift in Sources */,
+				9D7498FD264DA33300D5A66F /* CurrencySymbol.swift in Sources */,
+				9D7499162652B2A400D5A66F /* TodaysExpenses.swift in Sources */,
+				9DF21048266ADCE1004AF243 /* AllowanceWidget.intentdefinition in Sources */,
+				9D64A0CD265FB8BC009C1261 /* RemainingBox.swift in Sources */,
+				9D64A0BB265E9E0A009C1261 /* PersistenceContainer.swift in Sources */,
+				9D52B1E62656B953005F5A06 /* ExpenseList.swift in Sources */,
+				9DCB444326556F3000CDF124 /* AllExpenses.swift in Sources */,
+				9D74991F2652D7B000D5A66F /* NewExpenseButton.swift in Sources */,
+				9D7498E2264D7C5700D5A66F /* NeverbrokeApp.swift in Sources */,
+				9D7498F1264D9D1F00D5A66F /* UserPreferencesForm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF20FDC266A8292004AF243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF20FF6266A83F8004AF243 /* PersistenceContainer.swift in Sources */,
+				9DF20FF8266A83FF004AF243 /* Int32+inCurrency.swift in Sources */,
+				9DF20FF5266A83DE004AF243 /* CurrencySymbol.swift in Sources */,
+				9DF20FFD266A83FF004AF243 /* Date.swift in Sources */,
+				9DF20FF3266A83DE004AF243 /* AllowanceAmount.swift in Sources */,
+				9DF20FF4266A83DE004AF243 /* UserPreferences.swift in Sources */,
+				9DF20FEF266A839E004AF243 /* Intents.intentdefinition in Sources */,
+				9DF20FF9266A83FF004AF243 /* Formatter.swift in Sources */,
+				9DF20FFC266A83FF004AF243 /* String+isEmoji.swift in Sources */,
+				9DF20FEE266A8393004AF243 /* IntentHandler.swift in Sources */,
+				9DF20FF2266A83DE004AF243 /* ExpenseItem.swift in Sources */,
+				9DF20FF1266A83D8004AF243 /* Neverbroke.xcdatamodeld in Sources */,
+				9DF20FF7266A83F8004AF243 /* NeverbrokeStore.swift in Sources */,
+				9DF20FED266A8393004AF243 /* AllowanceIntentHandler.swift in Sources */,
+				9DF20FFA266A83FF004AF243 /* Double+inCents.swift in Sources */,
+				9DF20FFB266A83FF004AF243 /* Double+formattedAsAmount.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF20FFE266A84FB004AF243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF21016266A858B004AF243 /* CurrencySymbol.swift in Sources */,
+				9DF2101E266A8592004AF243 /* String+isEmoji.swift in Sources */,
+				9DF21010266A8577004AF243 /* IntentHandler.swift in Sources */,
+				9DF21014266A858B004AF243 /* UserPreferences.swift in Sources */,
+				9DF2100F266A8577004AF243 /* Intents.intentdefinition in Sources */,
+				9DF21017266A858B004AF243 /* ExpenseItem.swift in Sources */,
+				9DF21015266A858B004AF243 /* AllowanceAmount.swift in Sources */,
+				9DF2101A266A8592004AF243 /* Formatter.swift in Sources */,
+				9DF21018266A858E004AF243 /* Neverbroke.xcdatamodeld in Sources */,
+				9DF2101D266A8592004AF243 /* Double+inCents.swift in Sources */,
+				9DF2101C266A8592004AF243 /* Int32+inCurrency.swift in Sources */,
+				9DF21011266A8577004AF243 /* AllowanceIntentHandler.swift in Sources */,
+				9DF21019266A8592004AF243 /* Double+formattedAsAmount.swift in Sources */,
+				9DF21013266A8583004AF243 /* NeverbrokeStore.swift in Sources */,
+				9DF2101B266A8592004AF243 /* Date.swift in Sources */,
+				9DF21012266A8583004AF243 /* PersistenceContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF2101F266A87D1004AF243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF21042266A8AF2004AF243 /* Formatter.swift in Sources */,
+				9DF2103B266A8AEB004AF243 /* CurrencySymbol.swift in Sources */,
+				9DF21041266A8AF2004AF243 /* Date.swift in Sources */,
+				9DF21040266A8AF2004AF243 /* String+isEmoji.swift in Sources */,
+				9DF2103F266A8AF2004AF243 /* Double+inCents.swift in Sources */,
+				9DF2103D266A8AEB004AF243 /* UserPreferences.swift in Sources */,
+				9DF21045266A8CB5004AF243 /* AllowanceWidget.intentdefinition in Sources */,
+				9DF21044266A8AF2004AF243 /* Double+formattedAsAmount.swift in Sources */,
+				9DF21039266A8AE6004AF243 /* NeverbrokeStore.swift in Sources */,
+				9DF2103C266A8AEB004AF243 /* AllowanceAmount.swift in Sources */,
+				9DF2103A266A8AEB004AF243 /* ExpenseItem.swift in Sources */,
+				9DF2103E266A8AEE004AF243 /* Neverbroke.xcdatamodeld in Sources */,
+				9DF21043266A8AF2004AF243 /* Int32+inCurrency.swift in Sources */,
+				9DF21038266A8AE6004AF243 /* PersistenceContainer.swift in Sources */,
+				9DF21046266A8CB5004AF243 /* AllowanceWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D52B230265818D6005F5A06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D52B21F265818D5005F5A06 /* Widget (iOS) */;
+			targetProxy = 9D52B22F265818D6005F5A06 /* PBXContainerItemProxy */;
+		};
+		9D64A07C265BC456009C1261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D64A074265BC456009C1261 /* Intents (iOS) */;
+			targetProxy = 9D64A07B265BC456009C1261 /* PBXContainerItemProxy */;
+		};
+		9D64A0E5266013C3009C1261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D64A0E1266013C3009C1261 /* WatchKit (watchOS) */;
+			targetProxy = 9D64A0E4266013C3009C1261 /* PBXContainerItemProxy */;
+		};
+		9DF20FE7266A8292004AF243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DF20FDF266A8292004AF243 /* Intents (watchOS) */;
+			targetProxy = 9DF20FE6266A8292004AF243 /* PBXContainerItemProxy */;
+		};
+		9DF21009266A84FB004AF243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DF21001266A84FB004AF243 /* Intents (macOS) */;
+			targetProxy = 9DF21008266A84FB004AF243 /* PBXContainerItemProxy */;
+		};
+		9DF2102E266A87D1004AF243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DF21022266A87D1004AF243 /* Widget (macOS) */;
+			targetProxy = 9DF2102D266A87D1004AF243 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9D52B233265818D6005F5A06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Config/iOS-Widget.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				INFOPLIST_FILE = "Config/iOS-Widget.Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.AllowanceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D52B234265818D6005F5A06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Config/iOS-Widget.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				INFOPLIST_FILE = "Config/iOS-Widget.Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.AllowanceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D64A07F265BC456009C1261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Config/iOS-Intents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				INFOPLIST_FILE = "Config/iOS-Intents.Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.NeverbrokeIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D64A080265BC456009C1261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Config/iOS-Intents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				INFOPLIST_FILE = "Config/iOS-Intents.Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.NeverbrokeIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D64A0F4266013C4009C1261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Config/watchOS-Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Config/watchOS-Extension.Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit.Extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		9D64A0F5266013C4009C1261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Config/watchOS-Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Config/watchOS-Extension.Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit.Extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		9D64A0F8266013C4009C1261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/watchOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				IBSC_MODULE = Neverbroke2_WatchKit_Extension;
+				INFOPLIST_FILE = Config/watchOS.Info.plist;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		9D64A0F9266013C4009C1261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/watchOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				IBSC_MODULE = Neverbroke2_WatchKit_Extension;
+				INFOPLIST_FILE = Config/watchOS.Info.plist;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		9D7498E7264D7C5700D5A66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D7498E8264D7C5700D5A66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9D7498EA264D7C5700D5A66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/iOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Config/iOS.Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2;
+				PRODUCT_NAME = Neverbroke;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D7498EB264D7C5700D5A66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/iOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Config/iOS.Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2;
+				PRODUCT_NAME = Neverbroke;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D7498ED264D7C5700D5A66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Config/macOS.Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2;
+				PRODUCT_NAME = Neverbroke;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9D7498EE264D7C5700D5A66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Config/macOS.Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2;
+				PRODUCT_NAME = Neverbroke;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9DF20FEA266A8292004AF243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Config/watchOS-Intents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				INFOPLIST_FILE = "Config/watchOS-Intents.Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit.Extension.Intents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		9DF20FEB266A8292004AF243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Config/watchOS-Intents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				INFOPLIST_FILE = "Config/watchOS-Intents.Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit.Extension.Intents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		9DF2100C266A84FB004AF243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Config/macOS-Intents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Config/macOS-Intents.Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.NeverbrokeIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9DF2100D266A84FB004AF243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Config/macOS-Intents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Config/macOS-Intents.Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.NeverbrokeIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9DF21031266A87D1004AF243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Config/macOS-Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Config/macOS-Widget.Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.AllowanceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9DF21032266A87D1004AF243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Config/macOS-Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XW8U7UU4W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Config/macOS-Widget.Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.AllowanceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D52B232265818D6005F5A06 /* Build configuration list for PBXNativeTarget "Widget (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D52B233265818D6005F5A06 /* Debug */,
+				9D52B234265818D6005F5A06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D64A07E265BC456009C1261 /* Build configuration list for PBXNativeTarget "Intents (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D64A07F265BC456009C1261 /* Debug */,
+				9D64A080265BC456009C1261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D64A0F3266013C4009C1261 /* Build configuration list for PBXNativeTarget "WatchKit (watchOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D64A0F4266013C4009C1261 /* Debug */,
+				9D64A0F5266013C4009C1261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D64A0F7266013C4009C1261 /* Build configuration list for PBXNativeTarget "Neverbroke (watchOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D64A0F8266013C4009C1261 /* Debug */,
+				9D64A0F9266013C4009C1261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7498CC264D7C5300D5A66F /* Build configuration list for PBXProject "Neverbroke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7498E7264D7C5700D5A66F /* Debug */,
+				9D7498E8264D7C5700D5A66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7498E9264D7C5700D5A66F /* Build configuration list for PBXNativeTarget "Neverbroke (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7498EA264D7C5700D5A66F /* Debug */,
+				9D7498EB264D7C5700D5A66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7498EC264D7C5700D5A66F /* Build configuration list for PBXNativeTarget "Neverbroke (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7498ED264D7C5700D5A66F /* Debug */,
+				9D7498EE264D7C5700D5A66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF20FE9266A8292004AF243 /* Build configuration list for PBXNativeTarget "Intents (watchOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF20FEA266A8292004AF243 /* Debug */,
+				9DF20FEB266A8292004AF243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF2100B266A84FB004AF243 /* Build configuration list for PBXNativeTarget "Intents (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF2100C266A84FB004AF243 /* Debug */,
+				9DF2100D266A84FB004AF243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF21030266A87D1004AF243 /* Build configuration list for PBXNativeTarget "Widget (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF21031266A87D1004AF243 /* Debug */,
+				9DF21032266A87D1004AF243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D64A0BC265EA2F8009C1261 /* Neverbroke.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D64A0BD265EA2F8009C1261 /* Neverbroke.xcdatamodel */,
+			);
+			currentVersion = 9D64A0BD265EA2F8009C1261 /* Neverbroke.xcdatamodel */;
+			path = Neverbroke.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9D7498C9264D7C5300D5A66F /* Project object */;
+}
