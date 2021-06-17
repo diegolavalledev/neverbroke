@@ -1,0 +1,13 @@
+PRODUCT_NAME = $(SIRI_INTENTS_NAME);
+PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.NeverbrokeIntents;
+//IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+TARGETED_DEVICE_FAMILY = $(IPHONEOS_TARGETED_DEVICE_FAMILY);
+
+INFOPLIST_FILE = Config/SiriIntents/iOS/Info.plist;
+CODE_SIGN_ENTITLEMENTS = Config/SiriIntents/iOS/shared.entitlements;
+
+SDKROOT = iphoneos;
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @executable_path/../../Frameworks;
+
+SUPPORTS_MACCATALYST = NO;
+SKIP_INSTALL = YES;

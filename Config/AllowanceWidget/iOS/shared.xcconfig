@@ -1,0 +1,13 @@
+PRODUCT_NAME = $(ALLOWANCE_WIDGET_NAME);
+PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.AllowanceWidget;
+TARGETED_DEVICE_FAMILY = $(IPHONEOS_TARGETED_DEVICE_FAMILY);
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+
+INFOPLIST_FILE = Config/AllowanceWidget/iOS/Info.plist;
+CODE_SIGN_ENTITLEMENTS = Config/AllowanceWidget/iOS/shared.entitlements;
+
+SDKROOT = iphoneos;
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @executable_path/../../Frameworks;
+
+SKIP_INSTALL = YES;

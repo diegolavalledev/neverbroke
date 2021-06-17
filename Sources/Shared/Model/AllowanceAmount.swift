@@ -5,7 +5,7 @@ extension AllowanceAmount {
   static let suggestedValue = 20.0
 
   static let `default`: AllowanceAmount = {
-    let allowance = AllowanceAmount()
+    let allowance = AllowanceAmount(context: PersistenceContainer.mock.viewContext)
     allowance.amount = 20
     allowance.day = Date()
     return allowance

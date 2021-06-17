@@ -7,7 +7,8 @@ class PersistenceContainer: NSPersistentCloudKitContainer {
   private static let model =  NSManagedObjectModel(contentsOf: Bundle.main.url(forResource: "Neverbroke", withExtension: "momd")!)!
 
   static let shared = PersistenceContainer()
-  
+  static let mock = PersistenceContainer(inMemory: true)
+
   private let inMemory: Bool
   private var cancellable: Cancellable?
 

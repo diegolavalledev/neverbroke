@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D64A0D5266013C0009C1261"
-               BuildableName = "Neverbroke (watchOS).app"
-               BlueprintName = "Neverbroke (watchOS)"
+               BuildableName = "Neverbroke.app"
+               BlueprintName = "Container App (watchOS)"
                ReferencedContainer = "container:Neverbroke.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D64A0D5266013C0009C1261"
-               BuildableName = "Neverbroke (watchOS).app"
-               BlueprintName = "Neverbroke (watchOS)"
+               BuildableName = "Neverbroke.app"
+               BlueprintName = "Container App (watchOS)"
                ReferencedContainer = "container:Neverbroke.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -54,16 +54,18 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Neverbroke">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D64A0D5266013C0009C1261"
-            BuildableName = "Neverbroke (watchOS).app"
-            BlueprintName = "Neverbroke (watchOS)"
+            BuildableName = "Neverbroke.app"
+            BlueprintName = "Container App (watchOS)"
             ReferencedContainer = "container:Neverbroke.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -71,16 +73,27 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Neverbroke">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D64A0D5266013C0009C1261"
-            BuildableName = "Neverbroke (watchOS).app"
-            BlueprintName = "Neverbroke (watchOS)"
+            BuildableName = "Neverbroke.app"
+            BlueprintName = "Container App (watchOS)"
             ReferencedContainer = "container:Neverbroke.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9D64A0D5266013C0009C1261"
+            BuildableName = "Neverbroke.app"
+            BlueprintName = "Container App (watchOS)"
+            ReferencedContainer = "container:Neverbroke.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

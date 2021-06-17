@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D52B21F265818D5005F5A06"
-               BuildableName = "Widget (iOS).appex"
-               BlueprintName = "Widget (iOS)"
+               BuildableName = "&quot;Allowance Widget&quot;.appex"
+               BlueprintName = "Allowance Widget (iOS)"
                ReferencedContainer = "container:Neverbroke.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -63,8 +63,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D52B21F265818D5005F5A06"
-            BuildableName = "Widget (iOS).appex"
-            BlueprintName = "Widget (iOS)"
+            BuildableName = "&quot;Allowance Widget&quot;.appex"
+            BlueprintName = "Allowance Widget (iOS)"
             ReferencedContainer = "container:Neverbroke.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>

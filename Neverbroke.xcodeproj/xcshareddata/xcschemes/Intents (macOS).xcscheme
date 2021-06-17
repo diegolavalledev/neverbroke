@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9DF21001266A84FB004AF243"
-               BuildableName = "Intents (macOS).appex"
-               BlueprintName = "Intents (macOS)"
+               BuildableName = "&quot;Neverbroke Intents&quot;.appex"
+               BlueprintName = "Siri Intents (macOS)"
                ReferencedContainer = "container:Neverbroke.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

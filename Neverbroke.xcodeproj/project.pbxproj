@@ -19,6 +19,10 @@
 		9D061F48266817F0009355F2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
 		9D061F49266817F0009355F2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
 		9D061F4A266817F0009355F2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
+		9D45ECC5267A191D0032C08D /* Neverbroke.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9D64A0D6266013C0009C1261 /* Neverbroke.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D45ECCC267A2A4F0032C08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D64A0ED266013C4009C1261 /* Assets.xcassets */; };
+		9D45ECCE267A2ABD0032C08D /* ExtensionAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45ECCD267A2A8E0032C08D /* ExtensionAssets.xcassets */; };
+		9D45ECCF267A3E730032C08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D64A0ED266013C4009C1261 /* Assets.xcassets */; };
 		9D52B1E62656B953005F5A06 /* ExpenseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B1E52656B922005F5A06 /* ExpenseList.swift */; };
 		9D52B1E72656B954005F5A06 /* ExpenseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B1E52656B922005F5A06 /* ExpenseList.swift */; };
 		9D52B2172656D9BB005F5A06 /* ExpenseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B2162656D9BB005F5A06 /* ExpenseDetails.swift */; };
@@ -30,7 +34,7 @@
 		9D52B228265818D5005F5A06 /* AllowanceWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B227265818D5005F5A06 /* AllowanceWidget.swift */; };
 		9D52B22B265818D6005F5A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D52B22A265818D6005F5A06 /* Assets.xcassets */; };
 		9D52B22D265818D6005F5A06 /* AllowanceWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B229265818D5005F5A06 /* AllowanceWidget.intentdefinition */; };
-		9D52B231265818D6005F5A06 /* Widget (iOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D52B220265818D5005F5A06 /* Widget (iOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D52B231265818D6005F5A06 /* AllowanceWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D52B220265818D5005F5A06 /* AllowanceWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9D52B23826581BF2005F5A06 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F8264DA19400D5A66F /* UserPreferences.swift */; };
 		9D52B23B265823CB005F5A06 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
 		9D52B23C265823D1005F5A06 /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
@@ -39,7 +43,7 @@
 		9D52B23F26582AF9005F5A06 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
 		9D64A076265BC456009C1261 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A053265BBE2E009C1261 /* Intents.framework */; };
 		9D64A079265BC456009C1261 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A078265BC456009C1261 /* IntentHandler.swift */; };
-		9D64A07D265BC456009C1261 /* Intents (iOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D64A075265BC456009C1261 /* Intents (iOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D64A07D265BC456009C1261 /* SiriIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D64A075265BC456009C1261 /* SiriIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9D64A083265BF98D009C1261 /* AllowanceIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */; };
 		9D64A084265BFC44009C1261 /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
 		9D64A085265BFC4C009C1261 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
@@ -69,11 +73,9 @@
 		9D64A0CE265FB8BC009C1261 /* RemainingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0CC265FB7F2009C1261 /* RemainingBox.swift */; };
 		9D64A0CF265FFE37009C1261 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
 		9D64A0D0265FFE37009C1261 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
-		9D64A0DC266013C2009C1261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D64A0DB266013C2009C1261 /* Assets.xcassets */; };
-		9D64A0E3266013C3009C1261 /* WatchKit (watchOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D64A0E2266013C3009C1261 /* WatchKit (watchOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D64A0E3266013C3009C1261 /* Neverbroke.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D64A0E2266013C3009C1261 /* Neverbroke.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9D64A0E8266013C3009C1261 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0E7266013C3009C1261 /* ContentView.swift */; };
 		9D64A0EA266013C3009C1261 /* NeverbrokeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0E9266013C3009C1261 /* NeverbrokeApp.swift */; };
-		9D64A0EE266013C4009C1261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D64A0ED266013C4009C1261 /* Assets.xcassets */; };
 		9D64A10126601631009C1261 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A10026601631009C1261 /* CloudKit.framework */; };
 		9D64A10226601EF4009C1261 /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
 		9D64A10326601F09009C1261 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
@@ -124,6 +126,7 @@
 		9D74991D2652D08E00D5A66F /* ExpenseForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74991B2652D08700D5A66F /* ExpenseForm.swift */; };
 		9D74991F2652D7B000D5A66F /* NewExpenseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74991E2652D7B000D5A66F /* NewExpenseButton.swift */; };
 		9D7499202652D7B000D5A66F /* NewExpenseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74991E2652D7B000D5A66F /* NewExpenseButton.swift */; };
+		9DC97CC2267110CF00DF0BBC /* WindowID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC97CC1267110CF00DF0BBC /* WindowID.swift */; };
 		9DCB444226556F3000CDF124 /* AllExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB444126556F3000CDF124 /* AllExpenses.swift */; };
 		9DCB444326556F3000CDF124 /* AllExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB444126556F3000CDF124 /* AllExpenses.swift */; };
 		9DCB44452655782000CDF124 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
@@ -142,7 +145,7 @@
 		9DF20FDA266914EE004AF243 /* Int32+inCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */; };
 		9DF20FDB266A809B004AF243 /* WelcomeMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43BB266782B000D89443 /* WelcomeMessage.swift */; };
 		9DF20FE1266A8292004AF243 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A053265BBE2E009C1261 /* Intents.framework */; };
-		9DF20FE8266A8292004AF243 /* Intents (watchOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF20FE0266A8292004AF243 /* Intents (watchOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9DF20FE8266A8292004AF243 /* SiriIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF20FE0266A8292004AF243 /* SiriIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9DF20FED266A8393004AF243 /* AllowanceIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */; };
 		9DF20FEE266A8393004AF243 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A078265BC456009C1261 /* IntentHandler.swift */; };
 		9DF20FEF266A839E004AF243 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43A82665351900D89443 /* Intents.intentdefinition */; };
@@ -160,7 +163,7 @@
 		9DF20FFC266A83FF004AF243 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
 		9DF20FFD266A83FF004AF243 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
 		9DF21003266A84FB004AF243 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A053265BBE2E009C1261 /* Intents.framework */; };
-		9DF2100A266A84FB004AF243 /* Intents (macOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF21002266A84FB004AF243 /* Intents (macOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9DF2100A266A84FB004AF243 /* SiriIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF21002266A84FB004AF243 /* SiriIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9DF2100F266A8577004AF243 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43A82665351900D89443 /* Intents.intentdefinition */; };
 		9DF21010266A8577004AF243 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A078265BC456009C1261 /* IntentHandler.swift */; };
 		9DF21011266A8577004AF243 /* AllowanceIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */; };
@@ -180,7 +183,7 @@
 		9DF21024266A87D1004AF243 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D52B222265818D5005F5A06 /* WidgetKit.framework */; };
 		9DF21025266A87D1004AF243 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D52B224265818D5005F5A06 /* SwiftUI.framework */; };
 		9DF2102A266A87D1004AF243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF21029266A87D1004AF243 /* Assets.xcassets */; };
-		9DF2102F266A87D1004AF243 /* Widget (macOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF21023266A87D1004AF243 /* Widget (macOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9DF2102F266A87D1004AF243 /* AllowanceWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF21023266A87D1004AF243 /* AllowanceWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9DF21033266A8A1E004AF243 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A097265E8B70009C1261 /* CloudKit.framework */; };
 		9DF21035266A8A66004AF243 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A097265E8B70009C1261 /* CloudKit.framework */; };
 		9DF21037266A8A77004AF243 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A10026601631009C1261 /* CloudKit.framework */; };
@@ -209,6 +212,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9D45ECC6267A191D0032C08D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D64A0D5266013C0009C1261;
+			remoteInfo = "Neverbroke (watchOS)";
+		};
 		9D52B22F265818D6005F5A06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
@@ -254,14 +264,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9D45ECC8267A191D0032C08D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9D45ECC5267A191D0032C08D /* Neverbroke.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D52B235265818D6005F5A06 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9D52B231265818D6005F5A06 /* Widget (iOS).appex in Embed App Extensions */,
-				9D64A07D265BC456009C1261 /* Intents (iOS).appex in Embed App Extensions */,
+				9D52B231265818D6005F5A06 /* AllowanceWidget.appex in Embed App Extensions */,
+				9D64A07D265BC456009C1261 /* SiriIntents.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +293,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9D64A0E3266013C3009C1261 /* WatchKit (watchOS).appex in Embed App Extensions */,
+				9D64A0E3266013C3009C1261 /* Neverbroke.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +304,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9DF20FE8266A8292004AF243 /* Intents (watchOS).appex in Embed App Extensions */,
+				9DF20FE8266A8292004AF243 /* SiriIntents.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,8 +315,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9DF2100A266A84FB004AF243 /* Intents (macOS).appex in Embed App Extensions */,
-				9DF2102F266A87D1004AF243 /* Widget (macOS).appex in Embed App Extensions */,
+				9DF2100A266A84FB004AF243 /* SiriIntents.appex in Embed App Extensions */,
+				9DF2102F266A87D1004AF243 /* AllowanceWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,24 +327,52 @@
 		9D061F3C26679B1D009355F2 /* SpentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpentButton.swift; sourceTree = "<group>"; };
 		9D061F3E26679C58009355F2 /* CurrencyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyButton.swift; sourceTree = "<group>"; };
 		9D061F45266817F0009355F2 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		9D45EC7B2678FC6F0032C08D /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		9D45EC7C2678FC7A0032C08D /* iOS-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		9D45EC7D2678FC7C0032C08D /* iOS-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Release.xcconfig"; sourceTree = "<group>"; };
+		9D45ECCD267A2A8E0032C08D /* ExtensionAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ExtensionAssets.xcassets; sourceTree = "<group>"; };
+		9D45ECE7267B3FE50032C08D /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		9D45ECE8267B40020032C08D /* macOS-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Release.xcconfig"; sourceTree = "<group>"; };
+		9D45ECE9267B401A0032C08D /* macOS-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		9D45ECEA267B49450032C08D /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		9D45ECEB267B49450032C08D /* watchOS-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Release.xcconfig"; sourceTree = "<group>"; };
+		9D45ECEC267B49460032C08D /* watchOS-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		9D45ECF6267B54C90032C08D /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		9D45ECF7267B54CA0032C08D /* ContainerApp-watchOS-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ContainerApp-watchOS-Release.xcconfig"; sourceTree = "<group>"; };
+		9D45ECF8267B54CA0032C08D /* ContainerApp-watchOS-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ContainerApp-watchOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		9D45ECFB267B575B0032C08D /* AllowanceWidget-iOS-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "AllowanceWidget-iOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		9D45ECFC267B575C0032C08D /* AllowanceWidget-iOS-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "AllowanceWidget-iOS-Release.xcconfig"; sourceTree = "<group>"; };
+		9D45ECFD267B575C0032C08D /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		9D45ECFE267B57900032C08D /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		9D45ECFF267B57900032C08D /* AllowanceWidget-macOS-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "AllowanceWidget-macOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		9D45ED00267B57910032C08D /* AllowanceWidget-macOS-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "AllowanceWidget-macOS-Release.xcconfig"; sourceTree = "<group>"; };
+		9D45ED01267B579B0032C08D /* SiriIntents-iOS-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SiriIntents-iOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		9D45ED02267B579B0032C08D /* SiriIntents-iOS-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SiriIntents-iOS-Release.xcconfig"; sourceTree = "<group>"; };
+		9D45ED03267B579C0032C08D /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		9D45ED04267B579E0032C08D /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		9D45ED05267B579F0032C08D /* SiriIntents-macOS-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SiriIntents-macOS-Release.xcconfig"; sourceTree = "<group>"; };
+		9D45ED06267B579F0032C08D /* SiriIntents-macOS-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SiriIntents-macOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		9D45ED07267B57A10032C08D /* SiriIntents-watchOS-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SiriIntents-watchOS-Release.xcconfig"; sourceTree = "<group>"; };
+		9D45ED08267B57A20032C08D /* SiriIntents-watchOS-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SiriIntents-watchOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		9D45ED09267B57A20032C08D /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
 		9D52B1E52656B922005F5A06 /* ExpenseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseList.swift; sourceTree = "<group>"; };
 		9D52B2162656D9BB005F5A06 /* ExpenseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetails.swift; sourceTree = "<group>"; };
 		9D52B2192656DACA005F5A06 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
-		9D52B220265818D5005F5A06 /* Widget (iOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Widget (iOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D52B220265818D5005F5A06 /* AllowanceWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AllowanceWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D52B222265818D5005F5A06 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		9D52B224265818D5005F5A06 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		9D52B227265818D5005F5A06 /* AllowanceWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceWidget.swift; sourceTree = "<group>"; };
 		9D52B229265818D5005F5A06 /* AllowanceWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = AllowanceWidget.intentdefinition; sourceTree = "<group>"; };
 		9D52B22A265818D6005F5A06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D52B22C265818D6005F5A06 /* iOS-Widget.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-Widget.Info.plist"; sourceTree = "<group>"; };
-		9D52B236265819F0005F5A06 /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
-		9D52B23726581A26005F5A06 /* iOS-Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Widget.entitlements"; sourceTree = "<group>"; };
+		9D52B22C265818D6005F5A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D52B236265819F0005F5A06 /* shared.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shared.entitlements; sourceTree = "<group>"; };
+		9D52B23726581A26005F5A06 /* shared.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shared.entitlements; sourceTree = "<group>"; };
 		9D64A053265BBE2E009C1261 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
-		9D64A075265BC456009C1261 /* Intents (iOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents (iOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D64A075265BC456009C1261 /* SiriIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D64A078265BC456009C1261 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
-		9D64A07A265BC456009C1261 /* iOS-Intents.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-Intents.Info.plist"; sourceTree = "<group>"; };
+		9D64A07A265BC456009C1261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceIntentHandler.swift; sourceTree = "<group>"; };
-		9D64A08C265C00E4009C1261 /* iOS-Intents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Intents.entitlements"; sourceTree = "<group>"; };
+		9D64A08C265C00E4009C1261 /* shared.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shared.entitlements; sourceTree = "<group>"; };
 		9D64A08D265C02B0009C1261 /* RemoveExpenseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveExpenseButton.swift; sourceTree = "<group>"; };
 		9D64A091265E67A3009C1261 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		9D64A093265E8490009C1261 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -333,16 +382,15 @@
 		9D64A0C5265EBF29009C1261 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D64A0C7265FB0DB009C1261 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
 		9D64A0CC265FB7F2009C1261 /* RemainingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingBox.swift; sourceTree = "<group>"; };
-		9D64A0D6266013C0009C1261 /* Neverbroke (watchOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neverbroke (watchOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D64A0DB266013C2009C1261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D64A0DD266013C3009C1261 /* watchOS.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = watchOS.Info.plist; sourceTree = "<group>"; };
-		9D64A0E2266013C3009C1261 /* WatchKit (watchOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKit (watchOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D64A0D6266013C0009C1261 /* Neverbroke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neverbroke.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D64A0DD266013C3009C1261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D64A0E2266013C3009C1261 /* Neverbroke.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Neverbroke.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D64A0E7266013C3009C1261 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D64A0E9266013C3009C1261 /* NeverbrokeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverbrokeApp.swift; sourceTree = "<group>"; };
 		9D64A0ED266013C4009C1261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D64A0F2266013C4009C1261 /* watchOS-Extension.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "watchOS-Extension.Info.plist"; sourceTree = "<group>"; };
-		9D64A0FE266014E5009C1261 /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
-		9D64A0FF266015FE009C1261 /* watchOS-Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watchOS-Extension.entitlements"; sourceTree = "<group>"; };
+		9D64A0F2266013C4009C1261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D64A0FE266014E5009C1261 /* shared.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shared.entitlements; sourceTree = "<group>"; };
+		9D64A0FF266015FE009C1261 /* shared.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shared.entitlements; sourceTree = "<group>"; };
 		9D64A10026601631009C1261 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		9D6B43A82665351900D89443 /* Intents.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		9D6B43AB266544D700D89443 /* CurrencyForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyForm.swift; sourceTree = "<group>"; };
@@ -355,10 +403,10 @@
 		9D7498CF264D7C5400D5A66F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D7498D0264D7C5600D5A66F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D7498D5264D7C5700D5A66F /* Neverbroke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neverbroke.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D7498D8264D7C5700D5A66F /* iOS.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.Info.plist; sourceTree = "<group>"; };
+		9D7498D8264D7C5700D5A66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D7498DD264D7C5700D5A66F /* Neverbroke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neverbroke.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D7498DF264D7C5700D5A66F /* macOS.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.Info.plist; sourceTree = "<group>"; };
-		9D7498E0264D7C5700D5A66F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9D7498DF264D7C5700D5A66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D7498E0264D7C5700D5A66F /* shared.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shared.entitlements; sourceTree = "<group>"; };
 		9D7498EF264D9D1F00D5A66F /* UserPreferencesForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesForm.swift; sourceTree = "<group>"; };
 		9D7498F2264D9D9600D5A66F /* UserPreferencesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesButton.swift; sourceTree = "<group>"; };
 		9D7498F8264DA19400D5A66F /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
@@ -371,26 +419,30 @@
 		9D7499182652B37800D5A66F /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		9D74991B2652D08700D5A66F /* ExpenseForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseForm.swift; sourceTree = "<group>"; };
 		9D74991E2652D7B000D5A66F /* NewExpenseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseButton.swift; sourceTree = "<group>"; };
+		9D8BF73C2678EC6800A5F6CE /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		9D8BF73D2678F91300A5F6CE /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		9D8BF73E2678F91700A5F6CE /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		9DC97CBB266FF40C00DF0BBC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9DC97CBC266FF40C00DF0BBC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9DC97CBD266FF40C00DF0BBC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9DC97CBE266FF42E00DF0BBC /* .gitconfig */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .gitconfig; sourceTree = "<group>"; };
+		9DC97CC1267110CF00DF0BBC /* WindowID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowID.swift; sourceTree = "<group>"; };
 		9DCB444126556F3000CDF124 /* AllExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExpenses.swift; sourceTree = "<group>"; };
 		9DCB44442655782000CDF124 /* String+isEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isEmoji.swift"; sourceTree = "<group>"; };
 		9DCB444A26569EC200CDF124 /* Dates.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dates.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int32+inCurrency.swift"; sourceTree = "<group>"; };
 		9DF20FC52668EB47004AF243 /* AllowanceBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceBox.swift; sourceTree = "<group>"; };
 		9DF20FC62668EC75004AF243 /* AllowanceAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceAmount.swift; sourceTree = "<group>"; };
-		9DF20FE0266A8292004AF243 /* Intents (watchOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents (watchOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DF20FE5266A8292004AF243 /* watchOS-Intents.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "watchOS-Intents.Info.plist"; sourceTree = "<group>"; };
-		9DF21002266A84FB004AF243 /* Intents (macOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents (macOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DF21007266A84FB004AF243 /* macOS-Intents.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "macOS-Intents.Info.plist"; sourceTree = "<group>"; };
-		9DF21023266A87D1004AF243 /* Widget (macOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Widget (macOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF20FE0266A8292004AF243 /* SiriIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF20FE5266A8292004AF243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF21002266A84FB004AF243 /* SiriIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF21007266A84FB004AF243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF21023266A87D1004AF243 /* AllowanceWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AllowanceWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF21029266A87D1004AF243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9DF2102B266A87D1004AF243 /* macOS-Widget.Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "macOS-Widget.Info.plist"; sourceTree = "<group>"; };
-		9DF2102C266A87D1004AF243 /* macOS-Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "macOS-Widget.entitlements"; sourceTree = "<group>"; };
-		9DF21034266A8A62004AF243 /* macOS-Intents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "macOS-Intents.entitlements"; sourceTree = "<group>"; };
-		9DF21036266A8A70004AF243 /* watchOS-Intents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watchOS-Intents.entitlements"; sourceTree = "<group>"; };
+		9DF2102B266A87D1004AF243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF2102C266A87D1004AF243 /* shared.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shared.entitlements; sourceTree = "<group>"; };
+		9DF21034266A8A62004AF243 /* shared.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shared.entitlements; sourceTree = "<group>"; };
+		9DF21036266A8A70004AF243 /* shared.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shared.entitlements; sourceTree = "<group>"; };
 		9DF21097266B8B06004AF243 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -469,6 +521,153 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D45ECED267B4E710032C08D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D52B236265819F0005F5A06 /* shared.entitlements */,
+				9D7498D8264D7C5700D5A66F /* Info.plist */,
+				9D45EC7B2678FC6F0032C08D /* shared.xcconfig */,
+				9D45EC7C2678FC7A0032C08D /* iOS-Debug.xcconfig */,
+				9D45EC7D2678FC7C0032C08D /* iOS-Release.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9D45ECEE267B523E0032C08D /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D7498E0264D7C5700D5A66F /* shared.entitlements */,
+				9D7498DF264D7C5700D5A66F /* Info.plist */,
+				9D45ECE7267B3FE50032C08D /* shared.xcconfig */,
+				9D45ECE9267B401A0032C08D /* macOS-Debug.xcconfig */,
+				9D45ECE8267B40020032C08D /* macOS-Release.xcconfig */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		9D45ECEF267B52440032C08D /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D64A0FF266015FE009C1261 /* shared.entitlements */,
+				9D64A0F2266013C4009C1261 /* Info.plist */,
+				9D45ECEA267B49450032C08D /* shared.xcconfig */,
+				9D45ECEC267B49460032C08D /* watchOS-Debug.xcconfig */,
+				9D45ECEB267B49450032C08D /* watchOS-Release.xcconfig */,
+				9D45ECF2267B52760032C08D /* ContainerApp */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		9D45ECF0267B52550032C08D /* AllowanceWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9D45ECF9267B573B0032C08D /* iOS */,
+				9D45ECFA267B573B0032C08D /* macOS */,
+			);
+			path = AllowanceWidget;
+			sourceTree = "<group>";
+		};
+		9D45ECF1267B52690032C08D /* SiriIntents */ = {
+			isa = PBXGroup;
+			children = (
+				9D45ECF3267B52A60032C08D /* iOS */,
+				9D45ECF4267B52B30032C08D /* macOS */,
+				9D45ECF5267B52BF0032C08D /* watchOS */,
+			);
+			path = SiriIntents;
+			sourceTree = "<group>";
+		};
+		9D45ECF2267B52760032C08D /* ContainerApp */ = {
+			isa = PBXGroup;
+			children = (
+				9D64A0FE266014E5009C1261 /* shared.entitlements */,
+				9D64A0DD266013C3009C1261 /* Info.plist */,
+				9D45ECF6267B54C90032C08D /* shared.xcconfig */,
+				9D45ECF8267B54CA0032C08D /* ContainerApp-watchOS-Debug.xcconfig */,
+				9D45ECF7267B54CA0032C08D /* ContainerApp-watchOS-Release.xcconfig */,
+			);
+			path = ContainerApp;
+			sourceTree = "<group>";
+		};
+		9D45ECF3267B52A60032C08D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D64A08C265C00E4009C1261 /* shared.entitlements */,
+				9D64A07A265BC456009C1261 /* Info.plist */,
+				9D45ED03267B579C0032C08D /* shared.xcconfig */,
+				9D45ED01267B579B0032C08D /* SiriIntents-iOS-Debug.xcconfig */,
+				9D45ED02267B579B0032C08D /* SiriIntents-iOS-Release.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9D45ECF4267B52B30032C08D /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9DF21034266A8A62004AF243 /* shared.entitlements */,
+				9DF21007266A84FB004AF243 /* Info.plist */,
+				9D45ED04267B579E0032C08D /* shared.xcconfig */,
+				9D45ED06267B579F0032C08D /* SiriIntents-macOS-Debug.xcconfig */,
+				9D45ED05267B579F0032C08D /* SiriIntents-macOS-Release.xcconfig */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		9D45ECF5267B52BF0032C08D /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				9DF21036266A8A70004AF243 /* shared.entitlements */,
+				9DF20FE5266A8292004AF243 /* Info.plist */,
+				9D45ED09267B57A20032C08D /* shared.xcconfig */,
+				9D45ED08267B57A20032C08D /* SiriIntents-watchOS-Debug.xcconfig */,
+				9D45ED07267B57A10032C08D /* SiriIntents-watchOS-Release.xcconfig */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		9D45ECF9267B573B0032C08D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D52B23726581A26005F5A06 /* shared.entitlements */,
+				9D52B22C265818D6005F5A06 /* Info.plist */,
+				9D45ECFD267B575C0032C08D /* shared.xcconfig */,
+				9D45ECFB267B575B0032C08D /* AllowanceWidget-iOS-Debug.xcconfig */,
+				9D45ECFC267B575C0032C08D /* AllowanceWidget-iOS-Release.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9D45ECFA267B573B0032C08D /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9DF2102C266A87D1004AF243 /* shared.entitlements */,
+				9DF2102B266A87D1004AF243 /* Info.plist */,
+				9D45ECFE267B57900032C08D /* shared.xcconfig */,
+				9D45ECFF267B57900032C08D /* AllowanceWidget-macOS-Debug.xcconfig */,
+				9D45ED00267B57910032C08D /* AllowanceWidget-macOS-Release.xcconfig */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		9D45ED0A267B61570032C08D /* ContainerApp */ = {
+			isa = PBXGroup;
+			children = (
+				9D64A0ED266013C4009C1261 /* Assets.xcassets */,
+			);
+			path = ContainerApp;
+			sourceTree = "<group>";
+		};
+		9D45ED0B267B61820032C08D /* AllowanceWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9D52B227265818D5005F5A06 /* AllowanceWidget.swift */,
+				9D52B229265818D5005F5A06 /* AllowanceWidget.intentdefinition */,
+				9DF21096266B8A82004AF243 /* iOS */,
+				9DF21026266A87D1004AF243 /* macOS */,
+			);
+			path = AllowanceWidget;
+			sourceTree = "<group>";
+		};
 		9D52B221265818D5005F5A06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,31 +681,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9D52B226265818D5005F5A06 /* Shared-AllowanceWidget */ = {
-			isa = PBXGroup;
-			children = (
-				9D52B227265818D5005F5A06 /* AllowanceWidget.swift */,
-				9D52B229265818D5005F5A06 /* AllowanceWidget.intentdefinition */,
-			);
-			path = "Shared-AllowanceWidget";
-			sourceTree = "<group>";
-		};
-		9D64A077265BC456009C1261 /* Shared-Intents */ = {
+		9D64A077265BC456009C1261 /* SiriIntents */ = {
 			isa = PBXGroup;
 			children = (
 				9D6B43A82665351900D89443 /* Intents.intentdefinition */,
 				9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */,
 				9D64A078265BC456009C1261 /* IntentHandler.swift */,
 			);
-			path = "Shared-Intents";
-			sourceTree = "<group>";
-		};
-		9D64A0DA266013C0009C1261 /* watchOS-Stub */ = {
-			isa = PBXGroup;
-			children = (
-				9D64A0DB266013C2009C1261 /* Assets.xcassets */,
-			);
-			path = "watchOS-Stub";
+			path = SiriIntents;
 			sourceTree = "<group>";
 		};
 		9D64A0E6266013C3009C1261 /* watchOS */ = {
@@ -521,7 +703,8 @@
 				9D64A0E7266013C3009C1261 /* ContentView.swift */,
 				9D6B43AB266544D700D89443 /* CurrencyForm.swift */,
 				9D64A0E9266013C3009C1261 /* NeverbrokeApp.swift */,
-				9D64A0ED266013C4009C1261 /* Assets.xcassets */,
+				9D45ECCD267A2A8E0032C08D /* ExtensionAssets.xcassets */,
+				9D45ED0A267B61570032C08D /* ContainerApp */,
 			);
 			path = watchOS;
 			sourceTree = "<group>";
@@ -529,24 +712,14 @@
 		9D6B43A7266531EF00D89443 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				9D64A08C265C00E4009C1261 /* iOS-Intents.entitlements */,
-				9D64A07A265BC456009C1261 /* iOS-Intents.Info.plist */,
-				9D52B23726581A26005F5A06 /* iOS-Widget.entitlements */,
-				9D52B22C265818D6005F5A06 /* iOS-Widget.Info.plist */,
-				9D52B236265819F0005F5A06 /* iOS.entitlements */,
-				9D7498D8264D7C5700D5A66F /* iOS.Info.plist */,
-				9DF21034266A8A62004AF243 /* macOS-Intents.entitlements */,
-				9DF21007266A84FB004AF243 /* macOS-Intents.Info.plist */,
-				9DF2102C266A87D1004AF243 /* macOS-Widget.entitlements */,
-				9DF2102B266A87D1004AF243 /* macOS-Widget.Info.plist */,
-				9D7498E0264D7C5700D5A66F /* macOS.entitlements */,
-				9D7498DF264D7C5700D5A66F /* macOS.Info.plist */,
-				9D64A0FF266015FE009C1261 /* watchOS-Extension.entitlements */,
-				9D64A0F2266013C4009C1261 /* watchOS-Extension.Info.plist */,
-				9DF21036266A8A70004AF243 /* watchOS-Intents.entitlements */,
-				9DF20FE5266A8292004AF243 /* watchOS-Intents.Info.plist */,
-				9D64A0FE266014E5009C1261 /* watchOS.entitlements */,
-				9D64A0DD266013C3009C1261 /* watchOS.Info.plist */,
+				9D8BF73D2678F91300A5F6CE /* shared.xcconfig */,
+				9D8BF73E2678F91700A5F6CE /* Debug.xcconfig */,
+				9D8BF73C2678EC6800A5F6CE /* Release.xcconfig */,
+				9D45ECED267B4E710032C08D /* iOS */,
+				9D45ECEE267B523E0032C08D /* macOS */,
+				9D45ECEF267B52440032C08D /* watchOS */,
+				9D45ECF0267B52550032C08D /* AllowanceWidget */,
+				9D45ECF1267B52690032C08D /* SiriIntents */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -593,13 +766,13 @@
 			children = (
 				9D7498D5264D7C5700D5A66F /* Neverbroke.app */,
 				9D7498DD264D7C5700D5A66F /* Neverbroke.app */,
-				9D52B220265818D5005F5A06 /* Widget (iOS).appex */,
-				9D64A075265BC456009C1261 /* Intents (iOS).appex */,
-				9D64A0D6266013C0009C1261 /* Neverbroke (watchOS).app */,
-				9D64A0E2266013C3009C1261 /* WatchKit (watchOS).appex */,
-				9DF20FE0266A8292004AF243 /* Intents (watchOS).appex */,
-				9DF21002266A84FB004AF243 /* Intents (macOS).appex */,
-				9DF21023266A87D1004AF243 /* Widget (macOS).appex */,
+				9D52B220265818D5005F5A06 /* AllowanceWidget.appex */,
+				9D64A075265BC456009C1261 /* SiriIntents.appex */,
+				9D64A0D6266013C0009C1261 /* Neverbroke.app */,
+				9D64A0E2266013C3009C1261 /* Neverbroke.appex */,
+				9DF20FE0266A8292004AF243 /* SiriIntents.appex */,
+				9DF21002266A84FB004AF243 /* SiriIntents.appex */,
+				9DF21023266A87D1004AF243 /* AllowanceWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -616,6 +789,7 @@
 		9D7498DE264D7C5700D5A66F /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				9DC97CC1267110CF00DF0BBC /* WindowID.swift */,
 				9D64A0C5265EBF29009C1261 /* ContentView.swift */,
 			);
 			path = macOS;
@@ -635,15 +809,12 @@
 		9DC97CC0266FF5F600DF0BBC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9D7498CD264D7C5400D5A66F /* Shared */,
 				9D7498D7264D7C5700D5A66F /* iOS */,
 				9D7498DE264D7C5700D5A66F /* macOS */,
 				9D64A0E6266013C3009C1261 /* watchOS */,
-				9D64A0DA266013C0009C1261 /* watchOS-Stub */,
-				9D52B226265818D5005F5A06 /* Shared-AllowanceWidget */,
-				9DF21096266B8A82004AF243 /* iOS-AllowanceWidget */,
-				9DF21026266A87D1004AF243 /* macOS-AllowanceWidget */,
-				9D64A077265BC456009C1261 /* Shared-Intents */,
+				9D7498CD264D7C5400D5A66F /* Shared */,
+				9D45ED0B267B61820032C08D /* AllowanceWidget */,
+				9D64A077265BC456009C1261 /* SiriIntents */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -692,28 +863,28 @@
 			path = Playgrounds;
 			sourceTree = "<group>";
 		};
-		9DF21026266A87D1004AF243 /* macOS-AllowanceWidget */ = {
+		9DF21026266A87D1004AF243 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
 				9DF21029266A87D1004AF243 /* Assets.xcassets */,
 			);
-			path = "macOS-AllowanceWidget";
+			path = macOS;
 			sourceTree = "<group>";
 		};
-		9DF21096266B8A82004AF243 /* iOS-AllowanceWidget */ = {
+		9DF21096266B8A82004AF243 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				9D52B22A265818D6005F5A06 /* Assets.xcassets */,
 			);
-			path = "iOS-AllowanceWidget";
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D52B21F265818D5005F5A06 /* Widget (iOS) */ = {
+		9D52B21F265818D5005F5A06 /* Allowance Widget (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D52B232265818D6005F5A06 /* Build configuration list for PBXNativeTarget "Widget (iOS)" */;
+			buildConfigurationList = 9D52B232265818D6005F5A06 /* Build configuration list for PBXNativeTarget "Allowance Widget (iOS)" */;
 			buildPhases = (
 				9D52B21C265818D5005F5A06 /* Sources */,
 				9D52B21D265818D5005F5A06 /* Frameworks */,
@@ -723,14 +894,14 @@
 			);
 			dependencies = (
 			);
-			name = "Widget (iOS)";
+			name = "Allowance Widget (iOS)";
 			productName = AllowanceWidgetExtension;
-			productReference = 9D52B220265818D5005F5A06 /* Widget (iOS).appex */;
+			productReference = 9D52B220265818D5005F5A06 /* AllowanceWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		9D64A074265BC456009C1261 /* Intents (iOS) */ = {
+		9D64A074265BC456009C1261 /* Siri Intents (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D64A07E265BC456009C1261 /* Build configuration list for PBXNativeTarget "Intents (iOS)" */;
+			buildConfigurationList = 9D64A07E265BC456009C1261 /* Build configuration list for PBXNativeTarget "Siri Intents (iOS)" */;
 			buildPhases = (
 				9D64A071265BC456009C1261 /* Sources */,
 				9D64A072265BC456009C1261 /* Frameworks */,
@@ -740,14 +911,14 @@
 			);
 			dependencies = (
 			);
-			name = "Intents (iOS)";
+			name = "Siri Intents (iOS)";
 			productName = NeverbrokeIntents;
-			productReference = 9D64A075265BC456009C1261 /* Intents (iOS).appex */;
+			productReference = 9D64A075265BC456009C1261 /* SiriIntents.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		9D64A0D5266013C0009C1261 /* Neverbroke (watchOS) */ = {
+		9D64A0D5266013C0009C1261 /* Container App (watchOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D64A0F7266013C4009C1261 /* Build configuration list for PBXNativeTarget "Neverbroke (watchOS)" */;
+			buildConfigurationList = 9D64A0F7266013C4009C1261 /* Build configuration list for PBXNativeTarget "Container App (watchOS)" */;
 			buildPhases = (
 				9D64A0D4266013C0009C1261 /* Resources */,
 				9D64A0F6266013C4009C1261 /* Embed App Extensions */,
@@ -757,14 +928,14 @@
 			dependencies = (
 				9D64A0E5266013C3009C1261 /* PBXTargetDependency */,
 			);
-			name = "Neverbroke (watchOS)";
+			name = "Container App (watchOS)";
 			productName = "Neverbroke2 WatchKit App";
-			productReference = 9D64A0D6266013C0009C1261 /* Neverbroke (watchOS).app */;
+			productReference = 9D64A0D6266013C0009C1261 /* Neverbroke.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		9D64A0E1266013C3009C1261 /* WatchKit (watchOS) */ = {
+		9D64A0E1266013C3009C1261 /* Neverbroke (watchOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D64A0F3266013C4009C1261 /* Build configuration list for PBXNativeTarget "WatchKit (watchOS)" */;
+			buildConfigurationList = 9D64A0F3266013C4009C1261 /* Build configuration list for PBXNativeTarget "Neverbroke (watchOS)" */;
 			buildPhases = (
 				9D64A0DE266013C3009C1261 /* Sources */,
 				9D64A0DF266013C3009C1261 /* Frameworks */,
@@ -776,9 +947,9 @@
 			dependencies = (
 				9DF20FE7266A8292004AF243 /* PBXTargetDependency */,
 			);
-			name = "WatchKit (watchOS)";
+			name = "Neverbroke (watchOS)";
 			productName = "Neverbroke2 WatchKit Extension";
-			productReference = 9D64A0E2266013C3009C1261 /* WatchKit (watchOS).appex */;
+			productReference = 9D64A0E2266013C3009C1261 /* Neverbroke.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		9D7498D4264D7C5700D5A66F /* Neverbroke (iOS) */ = {
@@ -789,12 +960,14 @@
 				9D7498D2264D7C5700D5A66F /* Frameworks */,
 				9D7498D3264D7C5700D5A66F /* Resources */,
 				9D52B235265818D6005F5A06 /* Embed App Extensions */,
+				9D45ECC8267A191D0032C08D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				9D52B230265818D6005F5A06 /* PBXTargetDependency */,
 				9D64A07C265BC456009C1261 /* PBXTargetDependency */,
+				9D45ECC7267A191D0032C08D /* PBXTargetDependency */,
 			);
 			name = "Neverbroke (iOS)";
 			productName = "Neverbroke2 (iOS)";
@@ -821,9 +994,9 @@
 			productReference = 9D7498DD264D7C5700D5A66F /* Neverbroke.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9DF20FDF266A8292004AF243 /* Intents (watchOS) */ = {
+		9DF20FDF266A8292004AF243 /* Siri Intents (watchOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DF20FE9266A8292004AF243 /* Build configuration list for PBXNativeTarget "Intents (watchOS)" */;
+			buildConfigurationList = 9DF20FE9266A8292004AF243 /* Build configuration list for PBXNativeTarget "Siri Intents (watchOS)" */;
 			buildPhases = (
 				9DF20FDC266A8292004AF243 /* Sources */,
 				9DF20FDD266A8292004AF243 /* Frameworks */,
@@ -833,14 +1006,14 @@
 			);
 			dependencies = (
 			);
-			name = "Intents (watchOS)";
+			name = "Siri Intents (watchOS)";
 			productName = Intents;
-			productReference = 9DF20FE0266A8292004AF243 /* Intents (watchOS).appex */;
+			productReference = 9DF20FE0266A8292004AF243 /* SiriIntents.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		9DF21001266A84FB004AF243 /* Intents (macOS) */ = {
+		9DF21001266A84FB004AF243 /* Siri Intents (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DF2100B266A84FB004AF243 /* Build configuration list for PBXNativeTarget "Intents (macOS)" */;
+			buildConfigurationList = 9DF2100B266A84FB004AF243 /* Build configuration list for PBXNativeTarget "Siri Intents (macOS)" */;
 			buildPhases = (
 				9DF20FFE266A84FB004AF243 /* Sources */,
 				9DF20FFF266A84FB004AF243 /* Frameworks */,
@@ -850,14 +1023,14 @@
 			);
 			dependencies = (
 			);
-			name = "Intents (macOS)";
+			name = "Siri Intents (macOS)";
 			productName = NeverbrokeIntents;
-			productReference = 9DF21002266A84FB004AF243 /* Intents (macOS).appex */;
+			productReference = 9DF21002266A84FB004AF243 /* SiriIntents.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		9DF21022266A87D1004AF243 /* Widget (macOS) */ = {
+		9DF21022266A87D1004AF243 /* Allowance Widget (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DF21030266A87D1004AF243 /* Build configuration list for PBXNativeTarget "Widget (macOS)" */;
+			buildConfigurationList = 9DF21030266A87D1004AF243 /* Build configuration list for PBXNativeTarget "Allowance Widget (macOS)" */;
 			buildPhases = (
 				9DF2101F266A87D1004AF243 /* Sources */,
 				9DF21020266A87D1004AF243 /* Frameworks */,
@@ -867,9 +1040,9 @@
 			);
 			dependencies = (
 			);
-			name = "Widget (macOS)";
+			name = "Allowance Widget (macOS)";
 			productName = AllowanceWidgetExtension;
-			productReference = 9DF21023266A87D1004AF243 /* Widget (macOS).appex */;
+			productReference = 9DF21023266A87D1004AF243 /* AllowanceWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -925,13 +1098,13 @@
 			targets = (
 				9D7498D4264D7C5700D5A66F /* Neverbroke (iOS) */,
 				9D7498DC264D7C5700D5A66F /* Neverbroke (macOS) */,
-				9D64A0D5266013C0009C1261 /* Neverbroke (watchOS) */,
-				9D64A0E1266013C3009C1261 /* WatchKit (watchOS) */,
-				9D52B21F265818D5005F5A06 /* Widget (iOS) */,
-				9DF21022266A87D1004AF243 /* Widget (macOS) */,
-				9D64A074265BC456009C1261 /* Intents (iOS) */,
-				9DF21001266A84FB004AF243 /* Intents (macOS) */,
-				9DF20FDF266A8292004AF243 /* Intents (watchOS) */,
+				9D64A0E1266013C3009C1261 /* Neverbroke (watchOS) */,
+				9D52B21F265818D5005F5A06 /* Allowance Widget (iOS) */,
+				9DF21022266A87D1004AF243 /* Allowance Widget (macOS) */,
+				9D64A074265BC456009C1261 /* Siri Intents (iOS) */,
+				9DF21001266A84FB004AF243 /* Siri Intents (macOS) */,
+				9DF20FDF266A8292004AF243 /* Siri Intents (watchOS) */,
+				9D64A0D5266013C0009C1261 /* Container App (watchOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -956,7 +1129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D64A0DC266013C2009C1261 /* Assets.xcassets in Resources */,
+				9D45ECCC267A2A4F0032C08D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,7 +1137,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D64A0EE266013C4009C1261 /* Assets.xcassets in Resources */,
+				9D45ECCF267A3E730032C08D /* Assets.xcassets in Resources */,
+				9D45ECCE267A2ABD0032C08D /* ExtensionAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1153,6 +1327,7 @@
 				9D7499192652B37800D5A66F /* Expenses.swift in Sources */,
 				9D64A0BF265EA2F8009C1261 /* Neverbroke.xcdatamodeld in Sources */,
 				9D74990E264EC3F700D5A66F /* EditAllowanceButton.swift in Sources */,
+				9DC97CC2267110CF00DF0BBC /* WindowID.swift in Sources */,
 				9DF20FDB266A809B004AF243 /* WelcomeMessage.swift in Sources */,
 				9D7498F4264D9D9600D5A66F /* UserPreferencesButton.swift in Sources */,
 				9D64A0C9265FB11B009C1261 /* ExpenseItem.swift in Sources */,
@@ -1240,34 +1415,39 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9D45ECC7267A191D0032C08D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D64A0D5266013C0009C1261 /* Container App (watchOS) */;
+			targetProxy = 9D45ECC6267A191D0032C08D /* PBXContainerItemProxy */;
+		};
 		9D52B230265818D6005F5A06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D52B21F265818D5005F5A06 /* Widget (iOS) */;
+			target = 9D52B21F265818D5005F5A06 /* Allowance Widget (iOS) */;
 			targetProxy = 9D52B22F265818D6005F5A06 /* PBXContainerItemProxy */;
 		};
 		9D64A07C265BC456009C1261 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D64A074265BC456009C1261 /* Intents (iOS) */;
+			target = 9D64A074265BC456009C1261 /* Siri Intents (iOS) */;
 			targetProxy = 9D64A07B265BC456009C1261 /* PBXContainerItemProxy */;
 		};
 		9D64A0E5266013C3009C1261 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D64A0E1266013C3009C1261 /* WatchKit (watchOS) */;
+			target = 9D64A0E1266013C3009C1261 /* Neverbroke (watchOS) */;
 			targetProxy = 9D64A0E4266013C3009C1261 /* PBXContainerItemProxy */;
 		};
 		9DF20FE7266A8292004AF243 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9DF20FDF266A8292004AF243 /* Intents (watchOS) */;
+			target = 9DF20FDF266A8292004AF243 /* Siri Intents (watchOS) */;
 			targetProxy = 9DF20FE6266A8292004AF243 /* PBXContainerItemProxy */;
 		};
 		9DF21009266A84FB004AF243 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9DF21001266A84FB004AF243 /* Intents (macOS) */;
+			target = 9DF21001266A84FB004AF243 /* Siri Intents (macOS) */;
 			targetProxy = 9DF21008266A84FB004AF243 /* PBXContainerItemProxy */;
 		};
 		9DF2102E266A87D1004AF243 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9DF21022266A87D1004AF243 /* Widget (macOS) */;
+			target = 9DF21022266A87D1004AF243 /* Allowance Widget (macOS) */;
 			targetProxy = 9DF2102D266A87D1004AF243 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1275,571 +1455,148 @@
 /* Begin XCBuildConfiguration section */
 		9D52B233265818D6005F5A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ECFB267B575B0032C08D /* AllowanceWidget-iOS-Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Config/iOS-Widget.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				INFOPLIST_FILE = "Config/iOS-Widget.Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.AllowanceWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9D52B234265818D6005F5A06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ECFC267B575C0032C08D /* AllowanceWidget-iOS-Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Config/iOS-Widget.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				INFOPLIST_FILE = "Config/iOS-Widget.Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.AllowanceWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		9D64A07F265BC456009C1261 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ED01267B579B0032C08D /* SiriIntents-iOS-Debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Config/iOS-Intents.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				INFOPLIST_FILE = "Config/iOS-Intents.Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.NeverbrokeIntents;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9D64A080265BC456009C1261 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ED02267B579B0032C08D /* SiriIntents-iOS-Release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Config/iOS-Intents.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				INFOPLIST_FILE = "Config/iOS-Intents.Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.NeverbrokeIntents;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		9D64A0F4266013C4009C1261 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ECEC267B49460032C08D /* watchOS-Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "Config/watchOS-Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Config/watchOS-Extension.Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit.Extension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Debug;
 		};
 		9D64A0F5266013C4009C1261 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ECEB267B49450032C08D /* watchOS-Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "Config/watchOS-Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Config/watchOS-Extension.Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit.Extension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Release;
 		};
 		9D64A0F8266013C4009C1261 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ECF8267B54CA0032C08D /* ContainerApp-watchOS-Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Config/watchOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				IBSC_MODULE = Neverbroke2_WatchKit_Extension;
-				INFOPLIST_FILE = Config/watchOS.Info.plist;
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Debug;
 		};
 		9D64A0F9266013C4009C1261 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ECF7267B54CA0032C08D /* ContainerApp-watchOS-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Config/watchOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				IBSC_MODULE = Neverbroke2_WatchKit_Extension;
-				INFOPLIST_FILE = Config/watchOS.Info.plist;
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Release;
 		};
 		9D7498E7264D7C5700D5A66F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8BF73E2678F91700A5F6CE /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9D7498E8264D7C5700D5A66F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8BF73C2678EC6800A5F6CE /* Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
 		9D7498EA264D7C5700D5A66F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45EC7C2678FC7A0032C08D /* iOS-Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Config/iOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Config/iOS.Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2;
-				PRODUCT_NAME = Neverbroke;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9D7498EB264D7C5700D5A66F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45EC7D2678FC7C0032C08D /* iOS-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Config/iOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Config/iOS.Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2;
-				PRODUCT_NAME = Neverbroke;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		9D7498ED264D7C5700D5A66F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ECE9267B401A0032C08D /* macOS-Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Config/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Config/macOS.Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2;
-				PRODUCT_NAME = Neverbroke;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		9D7498EE264D7C5700D5A66F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ECE8267B40020032C08D /* macOS-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Config/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Config/macOS.Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2;
-				PRODUCT_NAME = Neverbroke;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		9DF20FEA266A8292004AF243 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ED08267B57A20032C08D /* SiriIntents-watchOS-Debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Config/watchOS-Intents.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				INFOPLIST_FILE = "Config/watchOS-Intents.Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit.Extension.Intents;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Debug;
 		};
 		9DF20FEB266A8292004AF243 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ED07267B57A10032C08D /* SiriIntents-watchOS-Release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Config/watchOS-Intents.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				INFOPLIST_FILE = "Config/watchOS-Intents.Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit.Extension.Intents;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Release;
 		};
 		9DF2100C266A84FB004AF243 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ED06267B579F0032C08D /* SiriIntents-macOS-Debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Config/macOS-Intents.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Config/macOS-Intents.Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.NeverbrokeIntents;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		9DF2100D266A84FB004AF243 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ED05267B579F0032C08D /* SiriIntents-macOS-Release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Config/macOS-Intents.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Config/macOS-Intents.Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.NeverbrokeIntents;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		9DF21031266A87D1004AF243 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ECFF267B57900032C08D /* AllowanceWidget-macOS-Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Config/macOS-Widget.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Config/macOS-Widget.Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.AllowanceWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		9DF21032266A87D1004AF243 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45ED00267B57910032C08D /* AllowanceWidget-macOS-Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Config/macOS-Widget.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XW8U7UU4W;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Config/macOS-Widget.Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MARKETING_VERSION = 2.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.AllowanceWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D52B232265818D6005F5A06 /* Build configuration list for PBXNativeTarget "Widget (iOS)" */ = {
+		9D52B232265818D6005F5A06 /* Build configuration list for PBXNativeTarget "Allowance Widget (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D52B233265818D6005F5A06 /* Debug */,
@@ -1848,7 +1605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D64A07E265BC456009C1261 /* Build configuration list for PBXNativeTarget "Intents (iOS)" */ = {
+		9D64A07E265BC456009C1261 /* Build configuration list for PBXNativeTarget "Siri Intents (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D64A07F265BC456009C1261 /* Debug */,
@@ -1857,7 +1614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D64A0F3266013C4009C1261 /* Build configuration list for PBXNativeTarget "WatchKit (watchOS)" */ = {
+		9D64A0F3266013C4009C1261 /* Build configuration list for PBXNativeTarget "Neverbroke (watchOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D64A0F4266013C4009C1261 /* Debug */,
@@ -1866,7 +1623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D64A0F7266013C4009C1261 /* Build configuration list for PBXNativeTarget "Neverbroke (watchOS)" */ = {
+		9D64A0F7266013C4009C1261 /* Build configuration list for PBXNativeTarget "Container App (watchOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D64A0F8266013C4009C1261 /* Debug */,
@@ -1902,7 +1659,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DF20FE9266A8292004AF243 /* Build configuration list for PBXNativeTarget "Intents (watchOS)" */ = {
+		9DF20FE9266A8292004AF243 /* Build configuration list for PBXNativeTarget "Siri Intents (watchOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DF20FEA266A8292004AF243 /* Debug */,
@@ -1911,7 +1668,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DF2100B266A84FB004AF243 /* Build configuration list for PBXNativeTarget "Intents (macOS)" */ = {
+		9DF2100B266A84FB004AF243 /* Build configuration list for PBXNativeTarget "Siri Intents (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DF2100C266A84FB004AF243 /* Debug */,
@@ -1920,7 +1677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DF21030266A87D1004AF243 /* Build configuration list for PBXNativeTarget "Widget (macOS)" */ = {
+		9DF21030266A87D1004AF243 /* Build configuration list for PBXNativeTarget "Allowance Widget (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DF21031266A87D1004AF243 /* Debug */,

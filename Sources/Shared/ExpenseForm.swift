@@ -4,12 +4,12 @@ struct ExpenseForm: View {
 
   @Binding var isPresented: Bool
 
-  @Environment(\.managedObjectContext) private var viewContext
-
-//  @FetchRequest(
-//    sortDescriptors: [NSSortDescriptor(keyPath: \ExpenseItem.timestamp_, ascending: false)],
-//    animation: .default)
-//  private var expenses: FetchedResults<ExpenseItem>
+  #if os(iOS) || os (macOS)
+    @State var disableSave = true
+  #endif
+  #if os(watchOS)
+    @State var disableSave = false
+  #endif
 
   @State var date = Date()
   @State var amount = 0.0
@@ -17,9 +17,19 @@ struct ExpenseForm: View {
   @State var category = ""
   @State var emoji = ""
 
+  @Environment(\.managedObjectContext) private var viewContext
+
   var amountFieldBody: some View {
     Group {
-      TextField("1.99", value: $amount, formatter: .currency)
+      TextField("1.99", value: $amount, formatter: .currency) {
+        if $0 {
+          disableSave = true
+        }
+      } onCommit: {
+        if amount > 0 {
+          disableSave = false
+        }
+      }
 
       #if os(watchOS)
         AmountStepper(amount: $amount)
@@ -27,9 +37,19 @@ struct ExpenseForm: View {
     }
   }
 
+  #if os(iOS) || os(macOS)
+    let sectionFooter = "Press return (enter) to validate the amount. The specified value must be greater than 0."
+  #endif
+  #if os(watchOS)
+    let sectionFooter = "The specified value must be greater than 0."
+  #endif
+
   var formBody: some View {
     Form {
-      Section(header: Text("Amount")) {
+      Section(
+        header: Text("Amount"),
+        footer: Text(sectionFooter)
+      ) {
 
         #if os(iOS)
           amountFieldBody
@@ -101,6 +121,7 @@ struct ExpenseForm: View {
 
       isPresented.toggle()
     }
+    .disabled(disableSave)
   }
 
   var cancelButton: some View {

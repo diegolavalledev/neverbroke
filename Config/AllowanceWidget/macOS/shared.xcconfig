@@ -1,0 +1,12 @@
+PRODUCT_NAME = $(ALLOWANCE_WIDGET_NAME);
+PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.AllowanceWidget;
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+
+INFOPLIST_FILE = Config/AllowanceWidget/macOS/Info.plist;
+CODE_SIGN_ENTITLEMENTS = Config/AllowanceWidget/macOS/shared.entitlements;
+
+SDKROOT = macosx;
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks;
+ENABLE_HARDENED_RUNTIME = YES;
+SKIP_INSTALL = YES;

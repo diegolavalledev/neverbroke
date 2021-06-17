@@ -6,8 +6,8 @@ struct AllowanceForm: View {
   @Binding var isPresented: Bool
   let allowances: [AllowanceAmount]
 
-  @State var newAmount = 0.0
   @State var disableSave = false
+  @State var newAmount = 0.0
 
   @Environment(\.managedObjectContext) private var viewContext
 
@@ -27,9 +27,19 @@ struct AllowanceForm: View {
     }
   }
 
+  #if os(iOS) || os(macOS)
+    let sectionFooter = "Press return (enter) to validate the amount. Your new allowance must be different than the current allowance."
+  #endif
+  #if os(watchOS)
+    let sectionFooter = "Your new allowance must be different than the current allowance."
+  #endif
+
   var formBody: some View {
     Form {
-      Section(header: Text("Amount")) {
+      Section(
+        header: Text("Amount"),
+        footer: Text(sectionFooter)
+      ) {
         #if os(macOS) || os(watchOS)
           amountFieldBody
         #else

@@ -9,6 +9,8 @@ struct ContentView: View {
     animation: .default)
   private var allowances: FetchedResults<AllowanceAmount>
 
+  @Environment(\.openURL) private var openURL
+
   var body: some View {
     Group {
       if allowances.isEmpty {
@@ -39,7 +41,10 @@ struct ContentView: View {
           VStack {
             TodaysExpenses()
           }
-          NavigationLink("Show all expenses", destination: AllExpenses())
+          //NavigationLink("Show all expenses", destination: AllExpenses())
+          Button("Show all expenses") {
+            openURL(WindowID.expenses.url)
+          }
         }
         .padding()
       }

@@ -1,0 +1,11 @@
+PRODUCT_NAME = $(SIRI_INTENTS_NAME);
+PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.NeverbrokeIntents;
+
+INFOPLIST_FILE = Config/SiriIntents/macOS/Info.plist;
+CODE_SIGN_ENTITLEMENTS = Config/SiriIntents/macOS/shared.entitlements;
+
+SDKROOT = macosx;
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks;
+
+ENABLE_HARDENED_RUNTIME = YES;
+SKIP_INSTALL = YES;
