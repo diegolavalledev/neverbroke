@@ -5,12 +5,68 @@ struct ExpenseDetails: View {
   let expense: ExpenseItem
   let currency: CurrencySymbol
 
+  #if os(iOS) || os(watchOS)
+    var amountHeader: some View {
+      Text("Amount")
+    }
+  #endif
+  #if os(macOS)
+    var amountHeader: some View {
+      Text("Amount")
+      .font(.callout)
+      .foregroundColor(.secondary)
+      .padding()
+    }
+  #endif
+
+  #if os(iOS) || os(watchOS)
+    var dateHeader: some View {
+      Text("Expense date")
+    }
+  #endif
+  #if os(macOS)
+    var dateHeader: some View {
+      Text("Expense date")
+      .font(.callout)
+      .foregroundColor(.secondary)
+      .padding()
+    }
+  #endif
+
+  #if os(iOS) || os(watchOS)
+    var emojiHeader: some View {
+      Text("Emoji")
+    }
+  #endif
+  #if os(macOS)
+    var emojiHeader: some View {
+      Text("Emoji")
+      .font(.callout)
+      .foregroundColor(.secondary)
+      .padding()
+    }
+  #endif
+
+  #if os(iOS) || os(watchOS)
+    var descriptionHeader: some View {
+      Text("Description and category")
+    }
+  #endif
+  #if os(macOS)
+    var descriptionHeader: some View {
+      Text("Description and category")
+      .font(.callout)
+      .foregroundColor(.secondary)
+      .padding()
+    }
+  #endif
+
   var formBody: some View {
     Form {
-      Section(header: Text("Amount")) {
+      Section(header: amountHeader) {
         Text(expense.amount.currencyFormat(symbol: currency))
       }
-      Section(header: Text("Expense date")) {
+      Section(header: dateHeader) {
         HStack {
           Text("Date/time")
           Spacer()
@@ -18,20 +74,30 @@ struct ExpenseDetails: View {
         }
         
       }
-      Section(header: Text("Emoji")) {
+      Section(header: emojiHeader) {
         Text(String(expense.emoji ?? ExpenseItem.emptyEmoji))
       }
-      Section(header: Text("Description and category")) {
+      Section(header: descriptionHeader) {
         Text(expense.memo ?? ExpenseItem.emptyMemo)
         Text(expense.category ?? ExpenseItem.emptyCategory)
       }
-      DeleteExpenseButton(expense: expense)
+      HStack {
+        DeleteExpenseButton(expense: expense)
+        #if os(macOS)
+          Spacer()
+        #endif
+      }
     }
   }
 
   var body: some View {
 #if os(macOS)
-      formBody
+      VStack {
+        formBody
+        Spacer()
+      }
+      .padding()
+      .frame(minWidth: 250, maxWidth: 300)
 #else
       formBody
       .navigationBarTitle("Expense")

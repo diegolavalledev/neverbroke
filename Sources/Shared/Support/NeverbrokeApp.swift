@@ -24,7 +24,7 @@ struct NeverbrokeApp: App {
           .frame(minWidth: 200)
         }
         .navigationTitle("Expenses")
-        .frame(minWidth: 400, minHeight: 400)
+        .frame(minWidth: 400, maxWidth: 600, minHeight: 400)
         .accentColor(Color("AccentColor"))
         .environment(\.managedObjectContext, viewContext)
         .environmentObject(store)

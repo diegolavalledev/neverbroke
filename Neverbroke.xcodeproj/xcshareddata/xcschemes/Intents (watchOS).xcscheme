@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9DF20FDF266A8292004AF243"
-               BuildableName = "&quot;Neverbroke Intents&quot;.appex"
+               BuildableName = "SiriIntents.appex"
                BlueprintName = "Siri Intents (watchOS)"
                ReferencedContainer = "container:Neverbroke.xcodeproj">
             </BuildableReference>
@@ -58,7 +58,7 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/Neverbroke">
+         RemotePath = "/$(SIRI_INTENTS_DISPLAY_NAME)">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9DF20FDF266A8292004AF243"
@@ -77,7 +77,7 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/Neverbroke">
+         RemotePath = "/$(SIRI_INTENTS_DISPLAY_NAME)">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9DF20FDF266A8292004AF243"

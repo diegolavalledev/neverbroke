@@ -13,10 +13,6 @@ struct AllExpenses: View {
 struct AllExpenses_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
-      #if os(macOS)
-        EmptyView()
-        EmptyView()
-      #endif
       AllExpenses(store: EnvironmentObject<NeverbrokeStore>())
     }
   }

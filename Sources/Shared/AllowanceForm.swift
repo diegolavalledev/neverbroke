@@ -38,7 +38,7 @@ struct AllowanceForm: View {
     Form {
       Section(
         header: Text("Amount"),
-        footer: Text(sectionFooter)
+        footer: Text(sectionFooter).lineLimit(5).fixedSize(horizontal: false, vertical: true)
       ) {
         #if os(macOS) || os(watchOS)
           amountFieldBody
@@ -62,26 +62,33 @@ struct AllowanceForm: View {
   }
 
   var body: some View {
-    NavigationView {
-      #if os(iOS)
+    #if os(iOS)
+      NavigationView {
         formBody
         .navigationBarTitle("Daily allowance", displayMode: .inline)
         .navigationBarItems(leading: firstTime ? nil : cancelButton, trailing: saveButton)
-      #endif
+      }
+      .onAppear(perform: setInitialValue)
+    #endif
 
-      #if os(macOS)
-        formBody
-      #endif
+    #if os(macOS)
+      formBody
+      .padding()
+      .frame(maxWidth: 200)
+      .onAppear(perform: setInitialValue)
+    #endif
 
-      #if os(watchOS)
+    #if os(watchOS)
+      NavigationView {
         formBody
-        //.navigationBarTitle("Allowance") // This will eliminate "Cancel"
-      #endif
- 
-    }
-    .onAppear {
-      newAmount = firstTime ? AllowanceAmount.suggestedValue : allowances.lastAmount
-    }
+      }
+      .onAppear(perform: setInitialValue)
+      // // This will eliminate "Cancel"
+    #endif
+  }
+
+  func setInitialValue() {
+    newAmount = firstTime ? AllowanceAmount.suggestedValue : allowances.lastAmount
   }
 
   var saveButton: some View {
