@@ -1541,7 +1541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ECE9267B401A0032C08D /* macOS-Debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 			};
 			name = Debug;
 		};
@@ -1549,7 +1549,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ECE8267B40020032C08D /* macOS-Release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 			};
 			name = Release;
 		};
@@ -1571,7 +1571,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ED06267B579F0032C08D /* SiriIntents-macOS-Debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 			};
 			name = Debug;
 		};
@@ -1579,7 +1579,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ED05267B579F0032C08D /* SiriIntents-macOS-Release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 			};
 			name = Release;
 		};
@@ -1587,7 +1587,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ECFF267B57900032C08D /* AllowanceWidget-macOS-Debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 			};
 			name = Debug;
 		};
@@ -1595,7 +1595,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ED00267B57910032C08D /* AllowanceWidget-macOS-Release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 			};
 			name = Release;
 		};

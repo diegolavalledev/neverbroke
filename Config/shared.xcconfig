@@ -21,7 +21,7 @@ WATCHOS_TARGETED_DEVICE_FAMILY = 4; // Apple Watch
 
 // Common settings
 SWIFT_EMIT_LOC_STRINGS = YES;
-CODE_SIGN_IDENTITY = $(inherited);
+// CODE_SIGN_IDENTITY set within project file
 
 // Xcode defaults
 ALWAYS_SEARCH_USER_PATHS = NO;
