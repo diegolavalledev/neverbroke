@@ -55,8 +55,10 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/$(SIRI_INTENTS_DISPLAY_NAME)">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9DF20FDF266A8292004AF243"
@@ -64,7 +66,7 @@
             BlueprintName = "Siri Intents (watchOS)"
             ReferencedContainer = "container:Neverbroke.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -72,8 +74,10 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/$(SIRI_INTENTS_DISPLAY_NAME)">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9DF20FDF266A8292004AF243"
@@ -81,7 +85,16 @@
             BlueprintName = "Siri Intents (watchOS)"
             ReferencedContainer = "container:Neverbroke.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9DF20FDF266A8292004AF243"
+            BuildableName = "SiriIntents.appex"
+            BlueprintName = "Siri Intents (watchOS)"
+            ReferencedContainer = "container:Neverbroke.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
