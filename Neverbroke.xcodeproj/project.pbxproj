@@ -734,7 +734,9 @@
 				9D52B221265818D5005F5A06 /* Frameworks */,
 				9D7498D6264D7C5700D5A66F /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		9D7498CD264D7C5400D5A66F /* Shared */ = {
 			isa = PBXGroup;
