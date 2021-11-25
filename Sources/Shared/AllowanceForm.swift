@@ -6,33 +6,24 @@ struct AllowanceForm: View {
   @Binding var isPresented: Bool
   let allowances: [AllowanceAmount]
 
-  @State var disableSave = false
   @State var newAmount = 0.0
-
+  @FocusState private var amountFocused
   @Environment(\.managedObjectContext) private var viewContext
+
+  var disableSave: Bool {
+    newAmount == allowances.lastAmount
+  }
 
   var firstTime: Bool {
     allowances.count == 0
   }
 
   var amountFieldBody: some View {
-    TextField("20.99", value: $newAmount, formatter: .currency) {
-      if $0 {
-        disableSave = true
-      }
-    } onCommit: {
-      if newAmount != allowances.lastAmount {
-        disableSave = false
-      }
-    }
+    TextField("Amount", value: $newAmount, formatter: .currency, prompt: Text("i.e. 32.50"))
+    .focused($amountFocused)
   }
 
-  #if os(iOS) || os(macOS)
-    let sectionFooter = "Press return (enter) to validate the amount. Your new allowance must be different than the current allowance."
-  #endif
-  #if os(watchOS)
-    let sectionFooter = "Your new allowance must be different than the current allowance."
-  #endif
+  let sectionFooter = "Your new allowance must be different than the current allowance."
 
   var formBody: some View {
     Form {
@@ -68,27 +59,30 @@ struct AllowanceForm: View {
         .navigationBarTitle("Daily allowance", displayMode: .inline)
         .navigationBarItems(leading: firstTime ? nil : cancelButton, trailing: saveButton)
       }
-      .onAppear(perform: setInitialValue)
+      .task(setInitialValue)
     #endif
 
     #if os(macOS)
       formBody
       .padding()
       .frame(maxWidth: 200)
-      .onAppear(perform: setInitialValue)
+      .task(setInitialValue)
     #endif
 
     #if os(watchOS)
       NavigationView {
         formBody
       }
-      .onAppear(perform: setInitialValue)
-      // // This will eliminate "Cancel"
+      .task(setInitialValue)
     #endif
   }
 
-  func setInitialValue() {
+  @Sendable func setInitialValue() async {
     newAmount = firstTime ? AllowanceAmount.suggestedValue : allowances.lastAmount
+    #if os(iOS)
+      await Task.sleep(1_000_000_000)
+      amountFocused = true
+    #endif
   }
 
   var saveButton: some View {
