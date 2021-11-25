@@ -25,6 +25,12 @@ class PersistenceContainer: NSPersistentCloudKitContainer {
       persistentStoreDescriptions[0].setOption(true as NSNumber, forKey: String(describing: NSPersistentStoreRemoteChangeNotificationPostOptionKey.self))
     }
 
+    //
+    // For us to be able to use async sequence this initializer and all functions calling it need to be async.
+    //
+    // Replace following line with:
+    // `for await notification in NotificationCenter.default.notifications(named: .NSPersistentStoreRemoteChange, object: .none) { … }`
+    //
     cancellable = NotificationCenter.default.publisher(for: .NSPersistentStoreRemoteChange, object:  persistentStoreCoordinator).sink { notification in
       precondition(notification.name == NSNotification.Name.NSPersistentStoreRemoteChange)
       NeverbrokeStore.updateComplications()
