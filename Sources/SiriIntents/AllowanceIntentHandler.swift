@@ -1,8 +1,8 @@
 import Intents
 import CoreData
 
-class AllowanceIntentHandler: NSObject, AllowanceIntentHandling {
-  func handle(intent: AllowanceIntent, completion: @escaping (AllowanceIntentResponse) -> ()) {
+class AllowanceIntentHandler: NSObject, @preconcurrency AllowanceIntentHandling {
+  @MainActor func handle(intent: AllowanceIntent, completion: @escaping (AllowanceIntentResponse) -> ()) {
     let store = NeverbrokeStore()
     let currency = store.userPreferences.currencySymbol
 

@@ -4,7 +4,7 @@ import Intents
 @main
 struct NeverbrokeApp: App {
 
-  @StateObject var store = NeverbrokeStore()
+  var store = NeverbrokeStore()
   @Environment(\.scenePhase) private var scenePhase
 
   private let viewContext = PersistenceContainer.shared.viewContext
@@ -15,11 +15,11 @@ struct NeverbrokeApp: App {
         ContentView(userPreferences: store.userPreferences)
         .accentColor(Color("AccentColor"))
         .environment(\.managedObjectContext, viewContext)
-        .environmentObject(store)
+        .environment(store)
       }
     }
-    .onChange(of: scenePhase) { phase in
-      INPreferences.requestSiriAuthorization { _ in }
+    .onChange(of: scenePhase) {
+      // INPreferences.requestSiriAuthorization { _ in }
     }
   }
 }

@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct NewExpenseButton: View {
-
+  
   @State var showingForm = false
   @Environment(\.managedObjectContext) private var viewContext
-
+  
   var body: some View {
     Button {
       showingForm.toggle()
@@ -14,14 +14,11 @@ struct NewExpenseButton: View {
     }
     .sheet(isPresented: $showingForm) {
       ExpenseForm(isPresented: $showingForm)
-      .environment(\.managedObjectContext, viewContext)
+        .environment(\.managedObjectContext, viewContext)
     }
   }
 }
 
-struct NewExpenseButton_Previews: PreviewProvider {
-  static var previews: some View {
-    NewExpenseButton()
-    .previewLayout(.sizeThatFits)
-  }
+#Preview(traits: .sizeThatFitsLayout) {
+  NewExpenseButton()
 }

@@ -3,9 +3,10 @@ import SwiftUI
 struct UserPreferencesButton: View {
 
   @State var showingForm = false
-  @EnvironmentObject var store: NeverbrokeStore
+  @Environment(NeverbrokeStore.self) var store
 
   var body: some View {
+    @Bindable var store = store
     Button {
       showingForm.toggle()
     }
@@ -19,9 +20,7 @@ struct UserPreferencesButton: View {
   }
 }
 
-struct UserPreferencesButton_Previews: PreviewProvider {
-  static var previews: some View {
-    UserPreferencesButton(showingForm: false, store: EnvironmentObject<NeverbrokeStore>())
-    .previewLayout(.sizeThatFits)
-  }
+#Preview(traits: .sizeThatFitsLayout) {
+  UserPreferencesButton(showingForm: false)
+    .environment(NeverbrokeStore())
 }

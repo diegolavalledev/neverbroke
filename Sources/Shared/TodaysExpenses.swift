@@ -2,7 +2,7 @@ import SwiftUI
 
 struct TodaysExpenses: View {
 
-  @EnvironmentObject var store: NeverbrokeStore
+  @Environment(NeverbrokeStore.self) var store
 
   @FetchRequest(
     sortDescriptors: [NSSortDescriptor(keyPath: \ExpenseItem.timestamp_, ascending: false)],
@@ -17,16 +17,14 @@ struct TodaysExpenses: View {
   var body: some View {
     if expenses.count == 0 {
       Text("You recorded no expenses so far today.")
-      .padding()
+        .padding()
     } else {
       Expenses(currency: store.userPreferences.currencySymbol, expenses: expenses)
     }
   }
 }
 
-struct TodaysExpenses_Previews: PreviewProvider {
-  static var previews: some View {
-    TodaysExpenses(store: EnvironmentObject<NeverbrokeStore>())
-    .previewLayout(.sizeThatFits)
-  }
+#Preview(traits: .sizeThatFitsLayout) {
+  TodaysExpenses()
+    .environment(NeverbrokeStore())
 }

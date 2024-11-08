@@ -14,52 +14,14 @@ struct ContentView: View {
       if allowances.isEmpty {
         AllowanceForm(isPresented: .constant(true), allowances: Array(allowances))
       } else {
-        allowanceEnteredBody
+        OnboardedContent(userPreferences: userPreferences)
       }
     }
     .modifier(WelcomeMessage())
   }
-
-  var allowanceEnteredBody: some View {
-    NavigationView {
-      ScrollView {
-        VStack {
-          VStack {
-            Text(userPreferences.greeting).font(.title)
-            Text(currentDate)
-          }
-          HStack {
-            AllowanceBox(userPreferences: userPreferences, allowances: Array(allowances))
-            RemainingBox(userPreferences: userPreferences)
-          }.padding()
-
-          NewExpenseButton()
-
-          GroupBox(label: Text("Today's expenses")) {
-            VStack {
-              TodaysExpenses()
-            }
-            NavigationLink("Show all expenses", destination: AllExpenses())
-          }
-          .padding()
-        }
-      }
-      .navigationBarTitle("Dashboard")
-      .navigationBarItems(trailing: UserPreferencesButton())
-    }
-    .navigationViewStyle(StackNavigationViewStyle())
-  }
-
-  var currentDate: String {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .medium
-    return formatter.string(from: Date())
-  }
 }
 
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView(userPreferences: .default)
-    .environmentObject(NeverbrokeStore())
-  }
+#Preview {
+  ContentView(userPreferences: .default)
+    .environment(NeverbrokeStore())
 }

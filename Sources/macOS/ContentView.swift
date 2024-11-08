@@ -1,16 +1,16 @@
 import SwiftUI
 
 struct ContentView: View {
-
+  
   let userPreferences: UserPreferences
-
+  
   @FetchRequest(
     sortDescriptors: [NSSortDescriptor(keyPath: \AllowanceAmount.timestamp_, ascending: true)],
     animation: .default)
   private var allowances: FetchedResults<AllowanceAmount>
-
+  
   @Environment(\.openURL) private var openURL
-
+  
   var body: some View {
     Group {
       if allowances.isEmpty {
@@ -21,7 +21,7 @@ struct ContentView: View {
     }
     .modifier(WelcomeMessage())
   }
-
+  
   var allowanceEnteredBody: some View {
     ScrollView {
       VStack {
@@ -34,9 +34,9 @@ struct ContentView: View {
           AllowanceBox(userPreferences: userPreferences, allowances: Array(allowances))
           RemainingBox(userPreferences: userPreferences)
         }.padding()
-
+        
         NewExpenseButton()
-
+        
         GroupBox(label: Text("Today's expenses")) {
           VStack {
             TodaysExpenses()
@@ -51,7 +51,7 @@ struct ContentView: View {
     }
     .frame(width: 400)
   }
-
+  
   var currentDate: String {
     let formatter = DateFormatter()
     formatter.dateStyle = .medium
@@ -59,8 +59,6 @@ struct ContentView: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView(userPreferences: .default)
-  }
+#Preview {
+  ContentView(userPreferences: .default)
 }

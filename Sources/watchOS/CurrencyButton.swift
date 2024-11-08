@@ -3,7 +3,7 @@ import SwiftUI
 struct CurrencyButton: View {
 
   let userPreferences: UserPreferences
-  @EnvironmentObject var store: NeverbrokeStore
+  @Environment(NeverbrokeStore.self) var store
 
   var body: some View {
     NavigationLink(destination: symbolForm) {
@@ -19,14 +19,14 @@ struct CurrencyButton: View {
     }
   }
 
+  @ViewBuilder
   var symbolForm: some View {
+    @Bindable var store = store
     CurrencyForm(userPreferences: $store.userPreferences)
   }
 }
 
-struct CurrencyButton_Previews: PreviewProvider {
-  static var previews: some View {
-    CurrencyButton(userPreferences: .default, store: EnvironmentObject<NeverbrokeStore>())
-    .previewLayout(.sizeThatFits)
-  }
+#Preview(traits: .sizeThatFitsLayout) {
+  CurrencyButton(userPreferences: .default)
+    .environment(NeverbrokeStore())
 }

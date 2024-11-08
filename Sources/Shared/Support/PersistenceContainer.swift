@@ -1,7 +1,7 @@
-import CoreData
+@preconcurrency import CoreData
 import Combine
 
-class PersistenceContainer: NSPersistentCloudKitContainer {
+class PersistenceContainer: NSPersistentCloudKitContainer, @unchecked Sendable {
 
   private static let name = "Neverbroke"
   private static let model =  NSManagedObjectModel(contentsOf: Bundle.main.url(forResource: "Neverbroke", withExtension: "momd")!)!

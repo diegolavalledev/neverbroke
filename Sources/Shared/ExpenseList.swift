@@ -1,16 +1,16 @@
 import SwiftUI
 
 struct ExpenseList: View {
-
+  
   let currency: CurrencySymbol
-
+  
   @FetchRequest(
     sortDescriptors: [NSSortDescriptor(keyPath: \ExpenseItem.timestamp_, ascending: false)],
     animation: .default)
   private var expenses: FetchedResults<ExpenseItem>
-
+  
   @Environment(\.managedObjectContext) private var viewContext
-
+  
   let dateFormatter: Formatter = {
     let df = DateFormatter()
     df.dateStyle = .medium
@@ -18,7 +18,7 @@ struct ExpenseList: View {
     df.doesRelativeDateFormatting = true
     return df
   }()
-
+  
   var body: some View {
     if expenses.count == 0 {
       VStack {
@@ -36,13 +36,13 @@ struct ExpenseList: View {
                 Text(expense.category ?? ExpenseItem.emptyCategory)
               }
               .font(.caption)
-
+              
               HStack {
-            Text("\(String(expense.emoji ?? ExpenseItem.emptyEmoji)) \(expense.amount.currencyFormat(symbol: currency))").bold()
+                Text("\(String(expense.emoji ?? ExpenseItem.emptyEmoji)) \(expense.amount.currencyFormat(symbol: currency))").bold()
                 Spacer()
                 Text(expense.memo ?? ExpenseItem.emptyMemo)
-                .lineLimit(1)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                  .lineLimit(1)
+                  .frame(maxWidth: .infinity, alignment: .leading)
               }.padding(.vertical)
             }
           }
@@ -55,10 +55,10 @@ struct ExpenseList: View {
           do {
             try viewContext.save()
           } catch {
-            #if DEBUG
-              let nsError = error as NSError
-              fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            #endif
+#if DEBUG
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+#endif
           }
         }
       }
@@ -66,12 +66,6 @@ struct ExpenseList: View {
   }
 }
 
-struct ExpenseList_Previews: PreviewProvider {
-  static var previews: some View {
-    Group {
-      ExpenseList(currency: UserPreferences.default.currencySymbol)
-      ExpenseList(currency: UserPreferences.default.currencySymbol)
-    }
-    .previewLayout(.sizeThatFits)
-  }
+#Preview(traits: .sizeThatFitsLayout) {
+  ExpenseList(currency: UserPreferences.default.currencySymbol)
 }

@@ -1,3 +1,4 @@
+import SwiftUI
 import Combine
 import Foundation
 
@@ -7,9 +8,9 @@ import Foundation
   import WidgetKit
 #endif
 
-class NeverbrokeStore: ObservableObject {
+@Observable class NeverbrokeStore {
 
-  static let suite = UserDefaults(suiteName: "group.com.diegolavalle.Neverbroke2")!
+  @MainActor static let suite = UserDefaults(suiteName: "group.com.diegolavalle.Neverbroke2")!
 
   enum Key: String {
     case userPreferences
@@ -18,7 +19,7 @@ class NeverbrokeStore: ObservableObject {
   var cancellable: Cancellable?
 
   /// Sync'd with custom User Defaults and iCloud Key-Value Storage
-  @Published var userPreferences: UserPreferences = {
+  @MainActor var userPreferences: UserPreferences = {
     let key = Key.userPreferences.rawValue
     if let json = NeverbrokeStore.suite.string(forKey: key) {
       return try! JSONDecoder().decode(UserPreferences.self, from: json.data(using: .utf8)!)

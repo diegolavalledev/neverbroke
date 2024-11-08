@@ -85,11 +85,11 @@ struct AllowanceWidgetEntryView : View {
   }
 
   var secondaryBgColor: Color {
-    #if os(macOS)
-      Color(.textBackgroundColor)
-    #else
-      Color(.secondarySystemBackground)
-    #endif
+#if os(macOS)
+    Color(.textBackgroundColor)
+#else
+    Color(.secondarySystemBackground)
+#endif
   }
 
   var widgetBody: some View {
@@ -97,13 +97,13 @@ struct AllowanceWidgetEntryView : View {
       Spacer()
       Text("Allowance")
       Text(allowance.currencyFormat(symbol: entry.currency))
-      .bold()
+        .bold()
       Spacer()
       if entry.configuration.showRemaining?.boolValue ?? true {
         Text(remainingValue < 0 ? "Short" : "Remaining")
         Text(remainingValue.currencyFormat(symbol: entry.currency))
-        .foregroundColor(remainingValue < 0 ? .red : .green)
-        .bold()
+          .foregroundColor(remainingValue < 0 ? .red : .green)
+          .bold()
         Spacer()
       }
     }
@@ -120,11 +120,14 @@ struct AllowanceWidgetEntryView : View {
   }
 
   var body: some View {
-    if entry.isPlaceholder {
-      widgetBody.redacted(reason: .placeholder)
-    } else {
-      widgetBody
+    Group{
+      if entry.isPlaceholder {
+        widgetBody.redacted(reason: .placeholder)
+      } else {
+        widgetBody
+      }
     }
+    .containerBackground(.background, for: .widget)
   }
 }
 
@@ -135,7 +138,7 @@ struct AllowanceWidget: Widget {
   var body: some WidgetConfiguration {
     IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
       AllowanceWidgetEntryView(entry: entry)
-      .accentColor(Color("AccentColor"))
+        .accentColor(Color("AccentColor"))
     }
     .configurationDisplayName("Allowance Widget")
     .description("See your daily allowance and remaining amount.")
@@ -143,25 +146,14 @@ struct AllowanceWidget: Widget {
   }
 }
 
-struct AllowanceWidget_Previews: PreviewProvider {
-  static let sampleEntry = AllowanceEntry(
+#Preview(as: .systemSmall) {
+  AllowanceWidget()
+} timeline: {
+  AllowanceEntry(
     date: Date(),
     currency: UserPreferences.default.currencySymbol,
     allowance: AllowanceAmount.default.amount,
     remaining: AllowanceAmount.default.amount,
     configuration: ConfigurationIntent()
   )
-
-  static var previews: some View {
-    Group {
-      AllowanceWidgetEntryView(entry: sampleEntry)
-      .environment(\.colorScheme, .light)
-      .previewDisplayName("Light mode")
-
-      AllowanceWidgetEntryView(entry: sampleEntry)
-      .environment(\.colorScheme, .dark)
-      .previewDisplayName("Dark mode")
-    }
-      .previewContext(WidgetPreviewContext(family: .systemSmall))
-  }
 }

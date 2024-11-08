@@ -1,18 +1,18 @@
 import SwiftUI
 
 struct AllowanceButton: View {
-
+  
   let userPreferences: UserPreferences
   let allowances: [AllowanceAmount]
-
+  
   @State var showForm = false
-
+  
   @Environment(\.managedObjectContext) private var viewContext
-
+  
   var allowance: String {
     allowances.lastAmount.currencyFormat(symbol: userPreferences.currencySymbol)
   }
-
+  
   var body: some View {
     VStack(alignment: .leading) {
       Text("Allowance").bold()
@@ -28,14 +28,11 @@ struct AllowanceButton: View {
     }
     .sheet(isPresented: $showForm) {
       AllowanceForm(isPresented: $showForm, allowances: Array(allowances))
-      .environment(\.managedObjectContext, viewContext)
+        .environment(\.managedObjectContext, viewContext)
     }
   }
 }
 
-struct AllowanceButton_Previews: PreviewProvider {
-  static var previews: some View {
-    AllowanceButton(userPreferences: .default, allowances: .default)
-    .previewLayout(.sizeThatFits)
-  }
+#Preview(traits: .sizeThatFitsLayout) {
+  AllowanceButton(userPreferences: .default, allowances: .default)
 }

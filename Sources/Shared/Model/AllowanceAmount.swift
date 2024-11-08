@@ -4,7 +4,7 @@ extension AllowanceAmount {
 
   static let suggestedValue = 20.0
 
-  static let `default`: AllowanceAmount = {
+  @MainActor static let `default`: AllowanceAmount = {
     let allowance = AllowanceAmount(context: PersistenceContainer.mock.viewContext)
     allowance.amount = 20
     allowance.day = Date()
@@ -29,7 +29,7 @@ extension AllowanceAmount {
 
 extension Sequence where Element == AllowanceAmount {
 
-  static var `default`: [AllowanceAmount] {
+  @MainActor static var `default`: [AllowanceAmount] {
     [.default]
   }
 

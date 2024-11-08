@@ -10,13 +10,13 @@ struct UserPreferencesForm: View {
 
   var body: some View {
     NavigationView {
-    #if os(macOS)
+#if os(macOS)
       formBody
-    #else
+#else
       formBody
-      .navigationBarTitle("Preferences", displayMode: .inline)
-      .navigationBarItems(leading: cancelButton, trailing: saveButton)
-    #endif
+        .navigationBarTitle("Preferences", displayMode: .inline)
+        .navigationBarItems(leading: cancelButton, trailing: saveButton)
+#endif
     }
     .onAppear {
       newName = userPreferences.userName
@@ -71,8 +71,6 @@ struct UserPreferencesForm: View {
   }
 }
 
-struct UserPreferencesForm_Previews: PreviewProvider {
-  static var previews: some View {
-    UserPreferencesForm(isPresented: .constant(true), userPreferences: .constant(.default))
-  }
+#Preview {
+  UserPreferencesForm(isPresented: .constant(true), userPreferences: .constant(.default))
 }

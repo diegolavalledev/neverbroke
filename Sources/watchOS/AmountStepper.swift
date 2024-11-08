@@ -49,8 +49,6 @@ struct AmountStepper: View {
   }
 }
 
-struct AmountStepper_Previews: PreviewProvider {
-  static var previews: some View {
-    AmountStepper(amount: .constant(29.99))
-  }
+#Preview {
+  AmountStepper(amount: .constant(29.99))
 }

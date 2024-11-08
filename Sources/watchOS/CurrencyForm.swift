@@ -40,8 +40,6 @@ struct CurrencyForm: View {
   }
 }
 
-struct CurrencyForm_Previews: PreviewProvider {
-  static var previews: some View {
-    CurrencyForm(userPreferences: .constant(.default))
-  }
+#Preview {
+  CurrencyForm(userPreferences: .constant(.default))
 }

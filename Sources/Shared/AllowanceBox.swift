@@ -24,8 +24,6 @@ struct AllowanceBox: View {
   }
 }
 
-struct AllowanceBox_Previews: PreviewProvider {
-  static var previews: some View {
-    AllowanceBox(userPreferences: .default, allowances: .default)
-  }
+#Preview {
+  AllowanceBox(userPreferences: .default, allowances: .default)
 }

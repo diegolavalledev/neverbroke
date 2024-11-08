@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035C10D62CDE270A00AF197C /* OnboardedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C10D52CDE270A00AF197C /* OnboardedContent.swift */; };
 		9D061F3D26679B1D009355F2 /* SpentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F3C26679B1D009355F2 /* SpentButton.swift */; };
 		9D061F3F26679C58009355F2 /* CurrencyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F3E26679C58009355F2 /* CurrencyButton.swift */; };
 		9D061F4026679D29009355F2 /* ExpenseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B1E52656B922005F5A06 /* ExpenseList.swift */; };
@@ -34,7 +35,7 @@
 		9D52B228265818D5005F5A06 /* AllowanceWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B227265818D5005F5A06 /* AllowanceWidget.swift */; };
 		9D52B22B265818D6005F5A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D52B22A265818D6005F5A06 /* Assets.xcassets */; };
 		9D52B22D265818D6005F5A06 /* AllowanceWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D52B229265818D5005F5A06 /* AllowanceWidget.intentdefinition */; };
-		9D52B231265818D6005F5A06 /* AllowanceWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D52B220265818D5005F5A06 /* AllowanceWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D52B231265818D6005F5A06 /* AllowanceWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9D52B220265818D5005F5A06 /* AllowanceWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9D52B23826581BF2005F5A06 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498F8264DA19400D5A66F /* UserPreferences.swift */; };
 		9D52B23B265823CB005F5A06 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
 		9D52B23C265823D1005F5A06 /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
@@ -43,7 +44,7 @@
 		9D52B23F26582AF9005F5A06 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
 		9D64A076265BC456009C1261 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A053265BBE2E009C1261 /* Intents.framework */; };
 		9D64A079265BC456009C1261 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A078265BC456009C1261 /* IntentHandler.swift */; };
-		9D64A07D265BC456009C1261 /* SiriIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D64A075265BC456009C1261 /* SiriIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D64A07D265BC456009C1261 /* SiriIntents.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9D64A075265BC456009C1261 /* SiriIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9D64A083265BF98D009C1261 /* AllowanceIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */; };
 		9D64A084265BFC44009C1261 /* NeverbrokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D749902264EB8B100D5A66F /* NeverbrokeStore.swift */; };
 		9D64A085265BFC4C009C1261 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7498FB264DA33300D5A66F /* CurrencySymbol.swift */; };
@@ -73,7 +74,6 @@
 		9D64A0CE265FB8BC009C1261 /* RemainingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0CC265FB7F2009C1261 /* RemainingBox.swift */; };
 		9D64A0CF265FFE37009C1261 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
 		9D64A0D0265FFE37009C1261 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0B9265E9E0A009C1261 /* PersistenceContainer.swift */; };
-		9D64A0E3266013C3009C1261 /* Neverbroke.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D64A0E2266013C3009C1261 /* Neverbroke.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9D64A0E8266013C3009C1261 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0E7266013C3009C1261 /* ContentView.swift */; };
 		9D64A0EA266013C3009C1261 /* NeverbrokeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A0E9266013C3009C1261 /* NeverbrokeApp.swift */; };
 		9D64A10126601631009C1261 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A10026601631009C1261 /* CloudKit.framework */; };
@@ -145,7 +145,7 @@
 		9DF20FDA266914EE004AF243 /* Int32+inCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF20FC42668E4C9004AF243 /* Int32+inCurrency.swift */; };
 		9DF20FDB266A809B004AF243 /* WelcomeMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43BB266782B000D89443 /* WelcomeMessage.swift */; };
 		9DF20FE1266A8292004AF243 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A053265BBE2E009C1261 /* Intents.framework */; };
-		9DF20FE8266A8292004AF243 /* SiriIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF20FE0266A8292004AF243 /* SiriIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9DF20FE8266A8292004AF243 /* SiriIntents.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9DF20FE0266A8292004AF243 /* SiriIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9DF20FED266A8393004AF243 /* AllowanceIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */; };
 		9DF20FEE266A8393004AF243 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A078265BC456009C1261 /* IntentHandler.swift */; };
 		9DF20FEF266A839E004AF243 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43A82665351900D89443 /* Intents.intentdefinition */; };
@@ -163,7 +163,7 @@
 		9DF20FFC266A83FF004AF243 /* String+isEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB44442655782000CDF124 /* String+isEmoji.swift */; };
 		9DF20FFD266A83FF004AF243 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D061F45266817F0009355F2 /* Date.swift */; };
 		9DF21003266A84FB004AF243 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A053265BBE2E009C1261 /* Intents.framework */; };
-		9DF2100A266A84FB004AF243 /* SiriIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF21002266A84FB004AF243 /* SiriIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9DF2100A266A84FB004AF243 /* SiriIntents.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9DF21002266A84FB004AF243 /* SiriIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9DF2100F266A8577004AF243 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B43A82665351900D89443 /* Intents.intentdefinition */; };
 		9DF21010266A8577004AF243 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A078265BC456009C1261 /* IntentHandler.swift */; };
 		9DF21011266A8577004AF243 /* AllowanceIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64A082265BF96B009C1261 /* AllowanceIntentHandler.swift */; };
@@ -183,7 +183,7 @@
 		9DF21024266A87D1004AF243 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D52B222265818D5005F5A06 /* WidgetKit.framework */; };
 		9DF21025266A87D1004AF243 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D52B224265818D5005F5A06 /* SwiftUI.framework */; };
 		9DF2102A266A87D1004AF243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF21029266A87D1004AF243 /* Assets.xcassets */; };
-		9DF2102F266A87D1004AF243 /* AllowanceWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DF21023266A87D1004AF243 /* AllowanceWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9DF2102F266A87D1004AF243 /* AllowanceWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9DF21023266A87D1004AF243 /* AllowanceWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9DF21033266A8A1E004AF243 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A097265E8B70009C1261 /* CloudKit.framework */; };
 		9DF21035266A8A66004AF243 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A097265E8B70009C1261 /* CloudKit.framework */; };
 		9DF21037266A8A77004AF243 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D64A10026601631009C1261 /* CloudKit.framework */; };
@@ -212,6 +212,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		03E821D42CD23B210005D1DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DF20FDF266A8292004AF243;
+			remoteInfo = "Siri Intents (watchOS)";
+		};
 		9D45ECC6267A191D0032C08D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
@@ -232,20 +239,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9D64A074265BC456009C1261;
 			remoteInfo = NeverbrokeIntents;
-		};
-		9D64A0E4266013C3009C1261 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D64A0E1266013C3009C1261;
-			remoteInfo = "Neverbroke2 WatchKit Extension";
-		};
-		9DF20FE6266A8292004AF243 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9D7498C9264D7C5300D5A66F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9DF20FDF266A8292004AF243;
-			remoteInfo = Intents;
 		};
 		9DF21008266A84FB004AF243 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -275,55 +268,45 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D52B235265818D6005F5A06 /* Embed App Extensions */ = {
+		9D52B235265818D6005F5A06 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9D52B231265818D6005F5A06 /* AllowanceWidget.appex in Embed App Extensions */,
-				9D64A07D265BC456009C1261 /* SiriIntents.appex in Embed App Extensions */,
+				9D52B231265818D6005F5A06 /* AllowanceWidget.appex in Embed Foundation Extensions */,
+				9D64A07D265BC456009C1261 /* SiriIntents.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D64A0F6266013C4009C1261 /* Embed App Extensions */ = {
+		9DF20FEC266A8292004AF243 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9D64A0E3266013C3009C1261 /* Neverbroke.appex in Embed App Extensions */,
+				9DF20FE8266A8292004AF243 /* SiriIntents.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DF20FEC266A8292004AF243 /* Embed App Extensions */ = {
+		9DF2100E266A84FB004AF243 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9DF20FE8266A8292004AF243 /* SiriIntents.appex in Embed App Extensions */,
+				9DF2100A266A84FB004AF243 /* SiriIntents.appex in Embed Foundation Extensions */,
+				9DF2102F266A87D1004AF243 /* AllowanceWidget.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DF2100E266A84FB004AF243 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				9DF2100A266A84FB004AF243 /* SiriIntents.appex in Embed App Extensions */,
-				9DF2102F266A87D1004AF243 /* AllowanceWidget.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		035C10D52CDE270A00AF197C /* OnboardedContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardedContent.swift; sourceTree = "<group>"; };
 		9D061F3C26679B1D009355F2 /* SpentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpentButton.swift; sourceTree = "<group>"; };
 		9D061F3E26679C58009355F2 /* CurrencyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyButton.swift; sourceTree = "<group>"; };
 		9D061F45266817F0009355F2 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -384,7 +367,6 @@
 		9D64A0CC265FB7F2009C1261 /* RemainingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingBox.swift; sourceTree = "<group>"; };
 		9D64A0D6266013C0009C1261 /* Neverbroke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neverbroke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D64A0DD266013C3009C1261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D64A0E2266013C3009C1261 /* Neverbroke.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Neverbroke.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D64A0E7266013C3009C1261 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D64A0E9266013C3009C1261 /* NeverbrokeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverbrokeApp.swift; sourceTree = "<group>"; };
 		9D64A0ED266013C4009C1261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -771,7 +753,6 @@
 				9D52B220265818D5005F5A06 /* AllowanceWidget.appex */,
 				9D64A075265BC456009C1261 /* SiriIntents.appex */,
 				9D64A0D6266013C0009C1261 /* Neverbroke.app */,
-				9D64A0E2266013C3009C1261 /* Neverbroke.appex */,
 				9DF20FE0266A8292004AF243 /* SiriIntents.appex */,
 				9DF21002266A84FB004AF243 /* SiriIntents.appex */,
 				9DF21023266A87D1004AF243 /* AllowanceWidget.appex */,
@@ -784,6 +765,7 @@
 			children = (
 				9D7498CF264D7C5400D5A66F /* ContentView.swift */,
 				9D64A093265E8490009C1261 /* Settings.bundle */,
+				035C10D52CDE270A00AF197C /* OnboardedContent.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -923,36 +905,19 @@
 			buildConfigurationList = 9D64A0F7266013C4009C1261 /* Build configuration list for PBXNativeTarget "Container App (watchOS)" */;
 			buildPhases = (
 				9D64A0D4266013C0009C1261 /* Resources */,
-				9D64A0F6266013C4009C1261 /* Embed App Extensions */,
+				9D64A0DE266013C3009C1261 /* Sources */,
+				9D64A0DF266013C3009C1261 /* Frameworks */,
+				9DF20FEC266A8292004AF243 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9D64A0E5266013C3009C1261 /* PBXTargetDependency */,
+				03E821D52CD23B210005D1DE /* PBXTargetDependency */,
 			);
 			name = "Container App (watchOS)";
 			productName = "Neverbroke2 WatchKit App";
 			productReference = 9D64A0D6266013C0009C1261 /* Neverbroke.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		9D64A0E1266013C3009C1261 /* Neverbroke (watchOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9D64A0F3266013C4009C1261 /* Build configuration list for PBXNativeTarget "Neverbroke (watchOS)" */;
-			buildPhases = (
-				9D64A0DE266013C3009C1261 /* Sources */,
-				9D64A0DF266013C3009C1261 /* Frameworks */,
-				9D64A0E0266013C3009C1261 /* Resources */,
-				9DF20FEC266A8292004AF243 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9DF20FE7266A8292004AF243 /* PBXTargetDependency */,
-			);
-			name = "Neverbroke (watchOS)";
-			productName = "Neverbroke2 WatchKit Extension";
-			productReference = 9D64A0E2266013C3009C1261 /* Neverbroke.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
+			productType = "com.apple.product-type.application";
 		};
 		9D7498D4264D7C5700D5A66F /* Neverbroke (iOS) */ = {
 			isa = PBXNativeTarget;
@@ -961,7 +926,7 @@
 				9D7498D1264D7C5700D5A66F /* Sources */,
 				9D7498D2264D7C5700D5A66F /* Frameworks */,
 				9D7498D3264D7C5700D5A66F /* Resources */,
-				9D52B235265818D6005F5A06 /* Embed App Extensions */,
+				9D52B235265818D6005F5A06 /* Embed Foundation Extensions */,
 				9D45ECC8267A191D0032C08D /* Embed Watch Content */,
 			);
 			buildRules = (
@@ -983,7 +948,7 @@
 				9D7498D9264D7C5700D5A66F /* Sources */,
 				9D7498DA264D7C5700D5A66F /* Frameworks */,
 				9D7498DB264D7C5700D5A66F /* Resources */,
-				9DF2100E266A84FB004AF243 /* Embed App Extensions */,
+				9DF2100E266A84FB004AF243 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -1053,8 +1018,9 @@
 		9D7498C9264D7C5300D5A66F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					9D52B21F265818D5005F5A06 = {
 						CreatedOnToolsVersion = 12.5;
@@ -1063,9 +1029,6 @@
 						CreatedOnToolsVersion = 12.5;
 					};
 					9D64A0D5266013C0009C1261 = {
-						CreatedOnToolsVersion = 12.5;
-					};
-					9D64A0E1266013C3009C1261 = {
 						CreatedOnToolsVersion = 12.5;
 					};
 					9D7498D4264D7C5700D5A66F = {
@@ -1100,7 +1063,6 @@
 			targets = (
 				9D7498D4264D7C5700D5A66F /* Neverbroke (iOS) */,
 				9D7498DC264D7C5700D5A66F /* Neverbroke (macOS) */,
-				9D64A0E1266013C3009C1261 /* Neverbroke (watchOS) */,
 				9D52B21F265818D5005F5A06 /* Allowance Widget (iOS) */,
 				9DF21022266A87D1004AF243 /* Allowance Widget (macOS) */,
 				9D64A074265BC456009C1261 /* Siri Intents (iOS) */,
@@ -1131,16 +1093,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D45ECCC267A2A4F0032C08D /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D64A0E0266013C3009C1261 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D45ECCF267A3E730032C08D /* Assets.xcassets in Resources */,
 				9D45ECCE267A2ABD0032C08D /* ExtensionAssets.xcassets in Resources */,
+				9D45ECCF267A3E730032C08D /* Assets.xcassets in Resources */,
+				9D45ECCC267A2A4F0032C08D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1292,6 +1247,7 @@
 				9D64A0CE265FB8BC009C1261 /* RemainingBox.swift in Sources */,
 				9D74990D264EC3F600D5A66F /* EditAllowanceButton.swift in Sources */,
 				9D7498F3264D9D9600D5A66F /* UserPreferencesButton.swift in Sources */,
+				035C10D62CDE270A00AF197C /* OnboardedContent.swift in Sources */,
 				9D7498FC264DA33300D5A66F /* CurrencySymbol.swift in Sources */,
 				9D7499172652B2A400D5A66F /* TodaysExpenses.swift in Sources */,
 				9D52B1E72656B954005F5A06 /* ExpenseList.swift in Sources */,
@@ -1417,6 +1373,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		03E821D52CD23B210005D1DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DF20FDF266A8292004AF243 /* Siri Intents (watchOS) */;
+			targetProxy = 03E821D42CD23B210005D1DE /* PBXContainerItemProxy */;
+		};
 		9D45ECC7267A191D0032C08D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9D64A0D5266013C0009C1261 /* Container App (watchOS) */;
@@ -1431,16 +1392,6 @@
 			isa = PBXTargetDependency;
 			target = 9D64A074265BC456009C1261 /* Siri Intents (iOS) */;
 			targetProxy = 9D64A07B265BC456009C1261 /* PBXContainerItemProxy */;
-		};
-		9D64A0E5266013C3009C1261 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9D64A0E1266013C3009C1261 /* Neverbroke (watchOS) */;
-			targetProxy = 9D64A0E4266013C3009C1261 /* PBXContainerItemProxy */;
-		};
-		9DF20FE7266A8292004AF243 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9DF20FDF266A8292004AF243 /* Siri Intents (watchOS) */;
-			targetProxy = 9DF20FE6266A8292004AF243 /* PBXContainerItemProxy */;
 		};
 		9DF21009266A84FB004AF243 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1459,6 +1410,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ECFB267B575B0032C08D /* AllowanceWidget-iOS-Debug.xcconfig */;
 			buildSettings = {
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 			};
 			name = Debug;
 		};
@@ -1466,6 +1419,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ECFC267B575C0032C08D /* AllowanceWidget-iOS-Release.xcconfig */;
 			buildSettings = {
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 			};
 			name = Release;
 		};
@@ -1473,6 +1428,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ED01267B579B0032C08D /* SiriIntents-iOS-Debug.xcconfig */;
 			buildSettings = {
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 			};
 			name = Debug;
 		};
@@ -1480,20 +1437,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ED02267B579B0032C08D /* SiriIntents-iOS-Release.xcconfig */;
 			buildSettings = {
-			};
-			name = Release;
-		};
-		9D64A0F4266013C4009C1261 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D45ECEC267B49460032C08D /* watchOS-Debug.xcconfig */;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		9D64A0F5266013C4009C1261 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D45ECEB267B49450032C08D /* watchOS-Release.xcconfig */;
-			buildSettings = {
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 			};
 			name = Release;
 		};
@@ -1501,6 +1446,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ECF8267B54CA0032C08D /* ContainerApp-watchOS-Debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = Config/watchOS/shared.entitlements;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -1508,6 +1460,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ECF7267B54CA0032C08D /* ContainerApp-watchOS-Release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = Config/watchOS/shared.entitlements;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -1515,6 +1474,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D8BF73E2678F91700A5F6CE /* Debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -1522,6 +1486,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D8BF73C2678EC6800A5F6CE /* Release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -1529,6 +1498,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45EC7C2678FC7A0032C08D /* iOS-Debug.xcconfig */;
 			buildSettings = {
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 			};
 			name = Debug;
 		};
@@ -1536,6 +1507,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45EC7D2678FC7C0032C08D /* iOS-Release.xcconfig */;
 			buildSettings = {
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 			};
 			name = Release;
 		};
@@ -1544,6 +1517,9 @@
 			baseConfigurationReference = 9D45ECE9267B401A0032C08D /* macOS-Debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
+				DEAD_CODE_STRIPPING = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 			};
 			name = Debug;
 		};
@@ -1552,6 +1528,9 @@
 			baseConfigurationReference = 9D45ECE8267B40020032C08D /* macOS-Release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
+				DEAD_CODE_STRIPPING = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 			};
 			name = Release;
 		};
@@ -1559,6 +1538,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ED08267B57A20032C08D /* SiriIntents-watchOS-Debug.xcconfig */;
 			buildSettings = {
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit.Intents;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Debug;
 		};
@@ -1566,6 +1548,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D45ED07267B57A10032C08D /* SiriIntents-watchOS-Release.xcconfig */;
 			buildSettings = {
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.Neverbroke2.WatchKit.Intents;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Release;
 		};
@@ -1574,6 +1559,9 @@
 			baseConfigurationReference = 9D45ED06267B579F0032C08D /* SiriIntents-macOS-Debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
+				DEAD_CODE_STRIPPING = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 			};
 			name = Debug;
 		};
@@ -1582,6 +1570,9 @@
 			baseConfigurationReference = 9D45ED05267B579F0032C08D /* SiriIntents-macOS-Release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
+				DEAD_CODE_STRIPPING = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 			};
 			name = Release;
 		};
@@ -1590,6 +1581,9 @@
 			baseConfigurationReference = 9D45ECFF267B57900032C08D /* AllowanceWidget-macOS-Debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
+				DEAD_CODE_STRIPPING = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 			};
 			name = Debug;
 		};
@@ -1598,6 +1592,9 @@
 			baseConfigurationReference = 9D45ED00267B57910032C08D /* AllowanceWidget-macOS-Release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
+				DEAD_CODE_STRIPPING = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 			};
 			name = Release;
 		};
@@ -1618,15 +1615,6 @@
 			buildConfigurations = (
 				9D64A07F265BC456009C1261 /* Debug */,
 				9D64A080265BC456009C1261 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9D64A0F3266013C4009C1261 /* Build configuration list for PBXNativeTarget "Neverbroke (watchOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9D64A0F4266013C4009C1261 /* Debug */,
-				9D64A0F5266013C4009C1261 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

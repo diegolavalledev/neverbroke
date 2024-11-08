@@ -6,6 +6,14 @@ extension ExpenseItem {
   static let emptyEmoji = "💸"
   static let emptyMemo = "(empty description)"
 
+  convenience init(cents: Int32, memo: String, emoji: String, category: String) {
+    self.init(context: .init(concurrencyType: .mainQueueConcurrencyType))
+    amount_ = cents
+    self.emoji = emoji
+    self.category = category
+    self.memo = memo
+  }
+
   var amount: Double {
     get { amount_.inCurrency }
     set { amount_ = newValue.inCents }

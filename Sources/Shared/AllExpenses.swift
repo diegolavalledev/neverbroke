@@ -2,18 +2,17 @@ import SwiftUI
 
 struct AllExpenses: View {
 
-  @EnvironmentObject var store: NeverbrokeStore
+  @Environment(NeverbrokeStore.self) var store
 
   var body: some View {
     ExpenseList(currency:  store.userPreferences.currencySymbol)
-    .navigationTitle("Expenses")
+      .navigationTitle("Expenses")
   }
 }
 
-struct AllExpenses_Previews: PreviewProvider {
-  static var previews: some View {
-    NavigationView {
-      AllExpenses(store: EnvironmentObject<NeverbrokeStore>())
-    }
+#Preview {
+  NavigationView {
+    AllExpenses()
+      .environment(NeverbrokeStore())
   }
 }
